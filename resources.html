@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Resources &mdash; OUR CLEAR HAVEN</title>
+<meta name="description" content="The Resource Vault behind Crystal Clear App: search and filter verified, local resources for housing, food, crisis support, legal aid, jobs, and more across Central Oregon.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ourclearhaven.org/resources.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ourclearhaven.org/resources.html">
+<meta property="og:title" content="Resources &mdash; OUR CLEAR HAVEN">
+<meta property="og:description" content="The Resource Vault behind Crystal Clear App: search and filter verified, local resources for housing, food, crisis support, legal aid, jobs, and more across Central Oregon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Alfa+Slab+One&family=Ultra&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="lang-toggle.js" defer></script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="nav-logo" href="index.html"><img src="logo-nav.png" alt="OUR CLEAR HAVEN"></a>
+    <div class="navlinks">
+      <a href="crystal-clear-app.html">Crystal Clear App</a>
+      <a href="dual-board.html" data-es="Junta Dual">Dual Board</a>
+      <a href="our-story.html" data-es="Nuestros Orígenes">Our Origins</a>
+      <a href="resources.html" class="active" data-es="Recursos">Resources</a>
+      <a href="get-involved.html" data-es="Participa">Get Involved</a>
+      <a href="grande-grand.html" data-es="Club de Fundadores">Founders Club</a>
+    </div>
+    <a class="navcta" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es="Donar">Donate</a>
+    <button class="hamburger" onclick="document.getElementById('mm').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    <div class="mobile-menu" id="mm">
+      <a href="crystal-clear-app.html">Crystal Clear App</a>
+      <a href="dual-board.html" data-es="Junta Dual">Dual Board</a>
+      <a href="our-story.html" data-es="Nuestros Orígenes">Our Origins</a>
+      <a href="resources.html" class="active" data-es="Recursos">Resources</a>
+      <a href="get-involved.html" data-es="Participa">Get Involved</a>
+      <a href="grande-grand.html" data-es="Club de Fundadores">Founders Club</a>
+      <a class="navcta" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es="Donar">Donate</a>
+    </div>
+  </div>
+</nav>
+<button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">ESP</button>
+
+<section class="page-hero" style="padding-bottom:24px">
+  <div class="wrap">
+    <span class="kicker" data-es="&#9679; El Resource Vault">&#9679; The Resource Vault</span>
+    <h1 style="font-size:clamp(26px,3.4vw,38px);max-width:28ch" data-es="Encuentra ayuda real, ahora mismo.">Find real help, right now.</h1>
+    <p class="lede" data-es="Busca o filtra por categoría. Cada listado de abajo es un recurso real y verificado del Centro de Oregon: dirección, teléfono y horario, para que puedas actuar de inmediato. Esta es una muestra funcional del Vault completo que viene dentro de Crystal Clear App.">Search or filter by category. Every listing below is a real, verified Central Oregon resource: address, phone, and hours, so you can act on it immediately. This is a working sample of the full Vault that ships inside Crystal Clear App.</p>
+    <p class="lede" style="margin-top:10px;font-size:14px" data-es-html="¿Quieres dar tu tiempo o tu dinero directamente a estas organizaciones? <a href=&quot;get-involved.html&quot; style=&quot;color:var(--gold);font-weight:700&quot;>Mira cómo participar &rarr;</a>">Want to give your time or your dollars directly to these organizations? <a href="get-involved.html" style="color:var(--gold);font-weight:700">See how to get involved &rarr;</a></p>
+  </div>
+</section>
+
+<style>body{padding-bottom:80px!important}.rw{background:#2c2118;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;color:#fff;padding:24px 20px 48px}.rw *{box-sizing:border-box;margin:0;padding:0}.ctl{padding-top:20px;width:100%;margin:0 auto 14px;display:flex;flex-direction:column;gap:10px}.sr{display:flex;gap:8px}.sw{flex:1}#fws{width:100%;background:#3a2d21;border:1px solid rgba(240,192,64,.18);border-radius:10px;padding:9px 14px;color:#fff;font-size:.92rem;outline:none}#fws:focus{border-color:rgba(240,192,64,.5)}#fws::placeholder{color:rgba(255,255,255,.45)}#fwt{background:#3a2d21;border:1px solid rgba(240,192,64,.18);border-radius:10px;padding:9px 12px;color:#fff;font-size:.84rem;outline:none;cursor:pointer;flex-shrink:0}#fwt option{background:#453525}.fr{display:flex;flex-wrap:wrap;gap:6px}.chip{background:transparent;border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:5px 12px;font-size:.77rem;cursor:pointer;color:rgba(255,255,255,.45);user-select:none}.chip:hover{color:#fff;border-color:#fff}.chip.active{font-weight:700}
+.chip[data-cat="Emergency Shelter"]{color:#7ab5e8;border-color:#7ab5e8}.chip[data-cat="Emergency Shelter"].active{background:rgba(91,155,213,.2)}
+.chip[data-cat="Food"]{color:#6dcc96;border-color:#6dcc96}.chip[data-cat="Food"].active{background:rgba(76,175,119,.2)}
+.chip[data-cat="Healthcare"]{color:#5dd6ce;border-color:#5dd6ce}.chip[data-cat="Healthcare"].active{background:rgba(60,184,176,.2)}
+.chip[data-cat="Crisis Support"]{color:#f08080;border-color:#f08080}.chip[data-cat="Crisis Support"].active{background:rgba(204,68,68,.2)}
+.chip[data-cat="Legal Aid"]{color:#e8a07a;border-color:#e8a07a}.chip[data-cat="Legal Aid"].active{background:rgba(224,123,57,.2)}
+.chip[data-cat="Housing & Utilities"]{color:#c4a8f0;border-color:#c4a8f0}.chip[data-cat="Housing & Utilities"].active{background:rgba(155,127,212,.2)}
+.chip[data-cat="Resource Navigation"]{color:#F0C040;border-color:#F0C040}.chip[data-cat="Resource Navigation"].active{background:rgba(240,192,64,.2)}
+.chip[data-cat="Employment"]{color:#d4a82a;border-color:#d4a82a}.chip[data-cat="Employment"].active{background:rgba(240,192,64,.15)}
+.chip[data-cat="Veterans"]{color:#b09de0;border-color:#b09de0}.chip[data-cat="Veterans"].active{background:rgba(155,127,212,.2)}.rc{font-size:.77rem;color:rgba(255,255,255,.45);text-align:right;margin-bottom:10px}.grid{padding-bottom:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}.card{background:#3a2d21;border:1px solid rgba(240,192,64,.18);border-radius:13px;padding:16px;display:flex;flex-direction:column;gap:9px}.card.hidden{display:none}.ct{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.cn{font-size:.96rem;font-weight:700;flex:1;line-height:1.3}.cb{font-size:.63rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:3px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0}.bes{background:rgba(91,155,213,.18);color:#7ab5e8;border:1px solid rgba(91,155,213,.28)}.bf{background:rgba(76,175,119,.18);color:#6dcc96;border:1px solid rgba(76,175,119,.28)}.bcs{background:rgba(204,68,68,.2);color:#f08080;border:1px solid rgba(204,68,68,.32)}.bv{background:rgba(155,127,212,.18);color:#b09de0;border:1px solid rgba(155,127,212,.28)}.brn{background:rgba(240,192,64,.18);color:#F0C040;border:1px solid rgba(240,192,64,.28)}.bla{background:rgba(224,123,57,.18);color:#e8a07a;border:1px solid rgba(224,123,57,.28)}.bhc{background:rgba(60,184,176,.18);color:#5dd6ce;border:1px solid rgba(60,184,176,.28)}.bhu{background:rgba(155,127,212,.14);color:#c4a8f0;border:1px solid rgba(155,127,212,.22)}.bem{background:rgba(240,192,64,.12);color:#d4a82a;border:1px solid rgba(240,192,64,.22)}.cd{font-size:.88rem;color:rgba(255,255,255,.6);display:flex;flex-direction:column;gap:6px}.dr{line-height:1.6}.pl{color:#F0C040;text-decoration:none;font-weight:700;font-size:.97rem}.pl:hover{color:#c89a00}.wl{color:#5b9bd5;font-size:.82rem;text-decoration:none;font-weight:500;display:block;margin-top:6px;transition:color .2s ease}.wl:hover{color:#7ab5e8}.wl .arrow{display:inline-block;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}.wl:hover .arrow{transform:translateX(4px)}.t{font-size:.65rem;color:rgba(255,255,255,.4)}.desc{font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5}.h247{color:#4caf77;font-weight:600}.dot{width:6px;height:6px;border-radius:50%;background:#4caf77;display:inline-block;margin-right:3px;vertical-align:middle;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}.nores{display:none;text-align:center;padding:48px;color:rgba(255,255,255,.45);font-size:.9rem;grid-column:1/-1}@media(max-width:500px){.sr{flex-direction:column}#fwt{width:100%}}</style>
+<div class="rw">
+<style>
+.cb-b{background:#9b2020;border-radius:10px;padding:12px 20px;margin:0 auto 18px;max-width:640px;text-align:center;font-family:'Segoe UI',system-ui,sans-serif}
+.cb-t{display:block;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff;opacity:.85;margin-bottom:6px}
+.cb-n{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px}
+.cb-i{display:flex;align-items:center;gap:6px;color:#fff;font-size:.86rem}
+.cb-i a{color:#fff;font-weight:800;font-size:1rem;text-decoration:none}
+.cb-i a:hover{text-decoration:underline}
+.cb-i span{font-size:.75rem;opacity:.8}
+@media(max-width:500px){.cb-n{flex-direction:column;gap:8px}}
+</style>
+<div class="cb-b">
+<span class="cb-t" data-es="&#9888; ¿Crisis o Emergencia? Consigue Ayuda Ahora">&#9888; Crisis or Emergency? Get Help Now</span>
+<div class="cb-n">
+<div class="cb-i"><a href="tel:988">988</a><span data-es="Crisis de Salud Mental">Mental Health Crisis</span></div>
+<div class="cb-i"><a href="tel:911">911</a><span data-es="Emergencia de Vida">Life Emergency</span></div>
+<div class="cb-i"><a href="tel:211">211</a><span data-es-html="Todas las Necesidades &middot; 24/7">All Needs &middot; 24/7</span></div>
+<div class="cb-i"><a href="tel:5413897021">541-389-7021</a><span data-es="Violencia Doméstica">Domestic Violence</span></div>
+</div>
+</div>
+<div class="ctl">
+    <div class="sr">
+      <div class="sw">
+        <input id="fws" type="search" placeholder="Search..." data-es-placeholder="Buscar...">
+      </div>
+      <select id="fwt">
+        <option value="category" data-es="Ordenar: Categoría">Sort: Category</option>
+        <option value="name" data-es="Ordenar: A&ndash;Z">Sort: A&ndash;Z</option>
+        <option value="247" data-es="Ordenar: 24/7 Primero">Sort: 24/7 First</option>
+      </select>
+    </div>
+    <div class="fr">
+    <button class="chip active" data-cat="All" data-es="Todos (29)">All (29)</button>
+    <button class="chip ccs" data-cat="Crisis Support" data-es="Apoyo en Crisis (3)">Crisis Support (3)</button>
+    <button class="chip ces" data-cat="Emergency Shelter" data-es="Refugio de Emergencia (6)">Emergency Shelter (6)</button>
+    <button class="chip cem" data-cat="Employment" data-es="Empleo (2)">Employment (2)</button>
+    <button class="chip cfd" data-cat="Food" data-es="Alimentos (4)">Food (4)</button>
+    <button class="chip chc" data-cat="Healthcare" data-es="Salud (5)">Healthcare (5)</button>
+    <button class="chip chu" data-cat="Housing & Utilities" data-es="Vivienda y Servicios (2)">Housing & Utilities (2)</button>
+    <button class="chip cla" data-cat="Legal Aid" data-es="Asistencia Legal (2)">Legal Aid (2)</button>
+    <button class="chip crn" data-cat="Resource Navigation" data-es="Navegación de Recursos (3)">Resource Navigation (3)</button>
+    <button class="chip cvt" data-cat="Veterans" data-es="Veteranos (2)">Veterans (2)</button>
+    </div>
+  </div>
+  <div class="rc" id="fwrc"></div><div class="grid">
+<div class="card" data-cat="Crisis Support">
+  <div class="ct"><div class="cn">Deschutes Stabilization Center</div><span class="cb bcs" data-es="Apoyo en Crisis">Crisis Support</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 63311 NE Jamison St, Bend OR 97703</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413227500">541-322-7500</a> <a class="wl" href="https://deschutes.org/health-services" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Centro de crisis de salud mental, 24/7. Alternativa a la sala de emergencias.">24/7 mental health crisis center. Alternative to the ER.</p>
+</div>
+<div class="card" data-cat="Crisis Support">
+  <div class="ct"><div class="cn">988 Suicide &amp; Crisis Lifeline</div><span class="cb bcs" data-es="Apoyo en Crisis">Crisis Support</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; Nationwide, call, text, or chat</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:988">988</a> <a class="wl" href="https://988lifeline.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Apoyo gratuito en crisis, 24/7, por teléfono, texto o chat.">Free 24/7 crisis support by phone, text, or chat.</p>
+</div>
+<div class="card" data-cat="Crisis Support">
+  <div class="ct"><div class="cn">Saving Grace, DV Services</div><span class="cb bcs" data-es="Apoyo en Crisis">Crisis Support</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; Bend, OR (confidential location)</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413897021">541-389-7021</a> <a class="wl" href="https://saving-grace.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Refugio de emergencia y defensoría para sobrevivientes de violencia doméstica y agresión.">Emergency shelter and advocacy for DV and assault survivors.</p>
+</div>
+<div class="card" data-cat="Emergency Shelter">
+  <div class="ct"><div class="cn">Lighthouse Navigation Center</div><span class="cb bes" data-es="Refugio de Emergencia">Emergency Shelter</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 275 NE 2nd St, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413180729">541-318-0729</a> <a class="wl" href="https://shepherdshousebend.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Refugio de acceso directo y bajo umbral. Comidas y manejo de casos. 100 camas.">Walk-up, low-barrier shelter. Meals &amp; case management. 100 beds.</p>
+</div>
+<div class="card" data-cat="Emergency Shelter">
+  <div class="ct"><div class="cn">Bethlehem Inn</div><span class="cb bes" data-es="Refugio de Emergencia">Emergency Shelter</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 3705 N Hwy 97, Bend OR 97703</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413228768">541-322-8768</a> <a class="wl" href="https://bethleheminnbend.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span data-es="Llamar para horario de admisión">Call for intake hours</span></div>
+  </div>
+  <p class="desc" data-es="Refugio de emergencia para adultos y familias. Incluye comidas.">Emergency shelter for adults and families. Meals included.</p>
+</div>
+<div class="card" data-cat="Emergency Shelter">
+  <div class="ct"><div class="cn">Franklin Avenue Shelter</div><span class="cb bes" data-es="Refugio de Emergencia">Emergency Shelter</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 154 NE Franklin Ave, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5416302533">541-630-2533</a> <a class="wl" href="https://neighborimpact.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span data-es="Llamar mar/jue 12–4pm para admisión">Call Tue/Thu 12&ndash;4pm for intake</span></div>
+  </div>
+  <p class="desc" data-es="Refugio para familias con niños y hogares médicamente frágiles.">Shelter for families with children and medically fragile households.</p>
+</div>
+<div class="card" data-cat="Emergency Shelter">
+  <div class="ct"><div class="cn">Stepping Stone Shelter</div><span class="cb bes" data-es="Refugio de Emergencia">Emergency Shelter</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 2346 NE Division St, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5416302533">541-630-2533</a> <a class="wl" href="https://neighborimpact.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span data-es="Llamar para disponibilidad">Call for availability</span></div>
+  </div>
+  <p class="desc" data-es="Refugio de NeighborImpact con 56 camas. Requiere referido.">56-bed NeighborImpact shelter. Referral required.</p>
+</div>
+<div class="card" data-cat="Emergency Shelter">
+  <div class="ct"><div class="cn">Central Oregon Villages</div><span class="cb bes" data-es="Refugio de Emergencia">Emergency Shelter</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 62010 SE 27th St, Bend OR 97702</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413821672">541-382-1672</a> <a class="wl" href="https://covillages.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span data-es="Por referido">By referral</span></div>
+  </div>
+  <p class="desc" data-es="Comunidad exterior administrada con unidades de refugio y espacio compartido.">Managed outdoor community with shelter units and shared space.</p>
+</div>
+<div class="card" data-cat="Emergency Shelter">
+  <div class="ct"><div class="cn">Shepherd's House Ministries</div><span class="cb bes" data-es="Refugio de Emergencia">Emergency Shelter</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 1854 NE Division St, Bend OR</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413882096">541-388-2096</a> <a class="wl" href="https://shepherdshousebend.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Refugio de bajo umbral con lavandería, comidas y duchas. 24/7.">Low-barrier shelter with laundry, meals, and showers. 24/7.</p>
+</div>
+<div class="card" data-cat="Food">
+  <div class="ct"><div class="cn">Family Kitchen</div><span class="cb bf" data-es="Alimentos">Food</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 231 NW Idaho Ave, Bend OR 97703</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5417605677">541-760-5677</a> <a class="wl" href="https://familykitchenbend.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span data-es="Diario, llamar para horarios de comida">Daily, call for meal times</span></div>
+  </div>
+  <p class="desc" data-es="Comidas diarias gratuitas para todos. Se aceptan visitas sin cita.">Free daily meals for everyone. Walk-in welcome.</p>
+</div>
+<div class="card" data-cat="Food">
+  <div class="ct"><div class="cn">NeighborImpact Food Pantry</div><span class="cb bf" data-es="Alimentos">Food</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 2303 SW First St, Redmond OR 97756</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5415482380">541-548-2380</a> <a class="wl" href="https://neighborimpact.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Cajas de alimentos, WIC, alcance de SNAP y asistencia con servicios públicos.">Food boxes, WIC, SNAP outreach, and utility assistance.</p>
+</div>
+<div class="card" data-cat="Food">
+  <div class="ct"><div class="cn">Deschutes County Food Bank</div><span class="cb bf" data-es="Alimentos">Food</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 450 NW Wall St, Bend OR 97703</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413821942">541-382-1942</a> <a class="wl" href="https://211info.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Thu 1&ndash;4pm</div>
+  </div>
+  <p class="desc" data-es="Cajas de alimentos de emergencia. No se necesita cita para tu primera visita.">Emergency food boxes. No appointment for your first visit.</p>
+</div>
+<div class="card" data-cat="Food">
+  <div class="ct"><div class="cn">Giving Plate Bend</div><span class="cb bf" data-es="Alimentos">Food</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 20565 Amber Meadow Dr, Bend OR 97702</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413308940">541-330-8940</a> <a class="wl" href="https://givingplatebend.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Tue/Thu 5:30&ndash;7pm &middot; Sat 10am&ndash;noon</div>
+  </div>
+  <p class="desc" data-es="Refrigerador comunitario y despensa. El cliente elige, como en una tienda.">Community fridge &amp; pantry. Client-choice, shop the shelves.</p>
+</div>
+<div class="card" data-cat="Healthcare">
+  <div class="ct"><div class="cn">Volunteers in Medicine Clinic</div><span class="cb bhc" data-es="Salud">Healthcare</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 2075 NE Wyatt Ct, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413896800">541-389-6800</a> <a class="wl" href="https://vimbend.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Thu 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Atención primaria gratuita para adultos sin seguro. No se requiere identificación.">Free primary care for uninsured adults. No ID required.</p>
+</div>
+<div class="card" data-cat="Healthcare">
+  <div class="ct"><div class="cn">Mosaic Medical</div><span class="cb bhc" data-es="Salud">Healthcare</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 1025 SW Disk Dr, Bend OR 97702</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413833005">541-383-3005</a> <a class="wl" href="https://mosaicmedical.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Centro de salud calificado (FQHC) con tarifas según ingresos. Salud dental y de comportamiento.">FQHC with sliding-scale fees. Dental and behavioral health.</p>
+</div>
+<div class="card" data-cat="Healthcare">
+  <div class="ct"><div class="cn">St. Charles, Social Work</div><span class="cb bhc" data-es="Salud">Healthcare</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 2500 NE Neff Rd, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413824321">541-382-4321</a> <a class="wl" href="https://stcharleshealthcare.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Trabajo social hospitalario: vivienda, ayuda financiera y transporte.">Hospital social work: housing, financial aid, and transport.</p>
+</div>
+<div class="card" data-cat="Healthcare">
+  <div class="ct"><div class="cn">Deschutes County Behavioral Health</div><span class="cb bhc" data-es="Salud">Healthcare</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 2577 NE Courtney Dr, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413227500">541-322-7500</a> <a class="wl" href="https://deschutes.org/health-services" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Salud mental y adicciones, ambulatorio. Línea de crisis 24/7.">Outpatient mental health &amp; addiction. Crisis line 24/7.</p>
+</div>
+<div class="card" data-cat="Healthcare">
+  <div class="ct"><div class="cn">BestCare Treatment Services</div><span class="cb bhc" data-es="Salud">Healthcare</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 750 NW Hill St, Bend OR 97703</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413229910">541-322-9910</a> <a class="wl" href="https://bestcareor.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Tratamiento de abuso de sustancias, salud mental y apoyo entre pares.">Substance use treatment, mental health, and peer support.</p>
+</div>
+<div class="card" data-cat="Legal Aid">
+  <div class="ct"><div class="cn">Legal Aid Services of Oregon</div><span class="cb bla" data-es="Asistencia Legal">Legal Aid</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; Central OR, remote available</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:8886108764">888-610-8764</a> <a class="wl" href="https://lasoregon.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 9am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Ayuda legal civil gratuita. Defensa contra desalojos y derechos de inquilinos.">Free civil legal help. Eviction defense and tenant rights.</p>
+</div>
+<div class="card" data-cat="Legal Aid">
+  <div class="ct"><div class="cn">Oregon Law Help</div><span class="cb bla" data-es="Asistencia Legal">Legal Aid</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; oregonlawhelp.org, online</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5032244086">503-224-4086</a> <a class="wl" href="https://oregonlawhelp.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Formularios legales de autoayuda y referencias a abogados para desalojos.">Self-help legal forms and attorney referrals for eviction.</p>
+</div>
+<div class="card" data-cat="Housing & Utilities">
+  <div class="ct"><div class="cn">Housing Works</div><span class="cb bhu" data-es="Vivienda y Servicios">Housing &amp; Utilities</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 1400 NE Division St, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5419231018">541-923-1018</a> <a class="wl" href="https://housingworks.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Autoridad regional de vivienda. Vales de la Sección 8 para el área tri-condado.">Regional housing authority. Section 8 vouchers for tri-county.</p>
+</div>
+<div class="card" data-cat="Housing & Utilities">
+  <div class="ct"><div class="cn">NeighborImpact, Utility Assistance</div><span class="cb bhu" data-es="Vivienda y Servicios">Housing &amp; Utilities</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 2303 SW First St, Redmond OR 97756</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5415482380">541-548-2380</a> <a class="wl" href="https://neighborimpact.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Asistencia de servicios públicos LIHEAP y mejoras de eficiencia para bajos ingresos.">LIHEAP utility assistance and weatherization for low-income.</p>
+</div>
+<div class="card" data-cat="Resource Navigation">
+  <div class="ct"><div class="cn">Central Oregon 211</div><span class="cb brn" data-es="Navegación de Recursos">Resource Navigation</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; Statewide, phone &amp; online</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:211">211</a> <a class="wl" href="https://211info.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; <span class="h247"><b class="dot"></b>Open 24/7</span></div>
+  </div>
+  <p class="desc" data-es="Línea de ayuda gratuita 24/7 para comida, refugio, servicios públicos y más.">Free 24/7 helpline for food, shelter, utilities, and more.</p>
+</div>
+<div class="card" data-cat="Resource Navigation">
+  <div class="ct"><div class="cn">REACH Central Oregon</div><span class="cb brn" data-es="Navegación de Recursos">Resource Navigation</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; Mobile, throughout Deschutes County</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:4257651782">425-765-1782</a> <a class="wl" href="https://www.reachoutcentraloregon.org/" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Alcance comunitario en las calles, manejo de casos y servicios de camión de duchas.">Street outreach, case management, and shower truck services.</p>
+</div>
+<div class="card" data-cat="Resource Navigation">
+  <div class="ct"><div class="cn">Thrive Central Oregon</div><span class="cb brn" data-es="Navegación de Recursos">Resource Navigation</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; Central Oregon (multiple sites)</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:211">211</a> <a class="wl" href="https://thrivecentral.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 9am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Navegación coordinada para vivienda, salud y beneficios.">Coordinated navigation for housing, health, and benefits.</p>
+</div>
+<div class="card" data-cat="Employment">
+  <div class="ct"><div class="cn">WorkSource Oregon, Bend</div><span class="cb bem" data-es="Empleo">Employment</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 1645 NE Forbes Rd, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413886070">541-388-6070</a> <a class="wl" href="https://worksourceoregon.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Búsqueda de empleo gratuita, ayuda con currículum, capacitación y desempleo.">Free job search, resume help, training, and unemployment.</p>
+</div>
+<div class="card" data-cat="Employment">
+  <div class="ct"><div class="cn">Opportunity Foundation of Central OR</div><span class="cb bem" data-es="Empleo">Employment</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 1191 SW Disk Dr, Bend OR 97702</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5415482611">541-548-2611</a> <a class="wl" href="https://opportunityfoundation.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Capacitación laboral y colocación para adultos con discapacidades.">Job training and placement for adults with disabilities.</p>
+</div>
+<div class="card" data-cat="Veterans">
+  <div class="ct"><div class="cn">COVO, Veterans Outreach</div><span class="cb bv" data-es="Veteranos">Veterans</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 612 SE 9th St, Bend OR 97702</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5413832793">541-383-2793</a> <a class="wl" href="https://covocentraloregon.org" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 9am&ndash;5pm</div>
+  </div>
+  <p class="desc" data-es="Suministros, navegación de vivienda y apoyo entre pares para veteranos.">Supplies, housing navigation, and peer support for veterans.</p>
+</div>
+<div class="card" data-cat="Veterans">
+  <div class="ct"><div class="cn">VA Bend Outpatient Clinic</div><span class="cb bv" data-es="Veteranos">Veterans</span></div>
+  <div class="cd">
+    <div class="dr">&#9679; 2110 NE Professional Ct, Bend OR 97701</div>
+    <div class="dr">&#9742; <a class="pl" href="tel:5416471249">541-647-1249</a> <a class="wl" href="https://va.gov/find-locations/" target="_blank">Website <span class="arrow">&rarr;</span></a></div>
+    <div class="dr">&#9711; Mon&ndash;Fri 8am&ndash;4:30pm</div>
+  </div>
+  <p class="desc" data-es="Atención primaria, salud mental e inscripción a beneficios de la VA.">VA primary care, mental health, and benefits enrollment.</p>
+</div>
+    <div id="fwnr" class="nores" data-es="No se encontraron resultados. Prueba otra búsqueda o filtro.">No results found. Try a different search or filter.</div>
+  </div>
+</div>
+<script>
+(function() {
+  var chips = document.querySelectorAll('.fr .chip');
+  var cards = Array.from(document.querySelectorAll('.grid .card'));
+  var noRes = document.getElementById('fwnr');
+  var rc    = document.getElementById('fwrc');
+  var si    = document.getElementById('fws');
+  var so    = document.getElementById('fwt');
+  var cat = 'All', q = '', sm = 'category';
+  function run() {
+    q = si.value.trim().toLowerCase();
+    var vis = [];
+    cards.forEach(function(c) {
+      var match = (cat === 'All' || c.dataset.cat === cat) &&
+                  (!q || c.textContent.toLowerCase().indexOf(q) !== -1);
+      c.classList.toggle('hidden', !match);
+      if (match) vis.push(c);
+    });
+    vis.sort(function(a, b) {
+      var an = a.querySelector('.cn').textContent.toLowerCase();
+      var bn = b.querySelector('.cn').textContent.toLowerCase();
+      if (sm === '247') {
+        var a7 = a.textContent.indexOf('Open 24/7') !== -1 ? 0 : 1;
+        var b7 = b.textContent.indexOf('Open 24/7') !== -1 ? 0 : 1;
+        return a7 - b7 || an.localeCompare(bn);
+      }
+      if (sm === 'name') return an.localeCompare(bn);
+      return a.dataset.cat.localeCompare(b.dataset.cat) || an.localeCompare(bn);
+    });
+    var g = document.querySelector('.grid');
+    vis.forEach(function(c) { g.appendChild(c); });
+    var isEs = document.documentElement.getAttribute('lang') === 'es';
+    rc.textContent = isEs ? (vis.length + ' de 29 recursos') : (vis.length + ' of 29 resources');
+    noRes.style.display = vis.length ? 'none' : 'block';
+  }
+  chips.forEach(function(ch) {
+    ch.addEventListener('click', function() {
+      cat = ch.dataset.cat;
+      chips.forEach(function(x) { x.classList.remove('active'); });
+      ch.classList.add('active');
+      run();
+    });
+  });
+  si.addEventListener('input', run);
+  so.addEventListener('change', function() { sm = so.value; run(); }); run();
+  var langBtn = document.getElementById('langToggle');
+  if (langBtn) langBtn.addEventListener('click', function(){ setTimeout(run, 0); });
+})();
+</script>
+
+<style>
+.findhelp-panel{display:flex;flex-direction:column;gap:20px;align-items:flex-start;margin-top:8px}
+.fh-links{display:flex;flex-wrap:wrap;gap:10px}
+.fh-chip{display:inline-block;padding:9px 18px;border-radius:100px;border:1px solid var(--line);color:var(--cream-dim);text-decoration:none;font-size:14px;font-weight:500;transition:border-color .2s,color .2s}
+.fh-chip:hover{border-color:var(--gold);color:var(--cream)}
+.fh-note{font-size:13px;color:var(--cream-dim);margin-top:2px}
+.sec-card-brown{background:#3a2d21}
+</style>
+<section class="sec-card-brown">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-es="Más allá de nuestro Vault">Beyond our Vault</div>
+      <h2 data-es-html="¿No lo encuentras aquí? <span class=&quot;accent&quot;>Busca en la red más amplia</span>.">Can't find it here? <span class="accent">Search the wider network</span>.</h2>
+      <p data-es="Nuestro Vault de arriba está verificado a mano para el Centro de Oregon. Para cualquier otra cosa — otro condado, o una categoría que aún no hemos agregado — la búsqueda funciona con findhelp.org, la red más grande del país de recursos locales verificados.">Our Vault above is hand-verified for Central Oregon. For anything else &mdash; another county, or a category we haven't added yet &mdash; search is powered by findhelp.org, the nation's largest network of verified local resources.</p>
+    </div>
+    <div class="findhelp-panel reveal">
+      <div class="fh-links">
+        <a href="https://www.findhelp.org/housing/help-pay-for-housing--bend-or?postal=97701" target="_blank" rel="noopener" class="fh-chip" data-es="Vivienda">Housing</a>
+        <a href="https://www.findhelp.org/food--bend-or?postal=97701" target="_blank" rel="noopener" class="fh-chip" data-es="Alimentos">Food</a>
+        <a href="https://www.findhelp.org/health--bend-or?postal=97701" target="_blank" rel="noopener" class="fh-chip" data-es="Salud">Health</a>
+        <a href="https://www.findhelp.org/money--bend-or?postal=97701" target="_blank" rel="noopener" class="fh-chip" data-es="Dinero">Money</a>
+        <a href="https://www.findhelp.org/goods--bend-or?postal=97701" target="_blank" rel="noopener" class="fh-chip" data-es="Bienes">Goods</a>
+        <a href="https://www.findhelp.org/work--bend-or?postal=97701" target="_blank" rel="noopener" class="fh-chip" data-es="Trabajo">Work</a>
+        <a href="https://www.findhelp.org/legal--bend-or?postal=97701" target="_blank" rel="noopener" class="fh-chip" data-es="Legal">Legal</a>
+      </div>
+      <a class="btn btn-primary" href="https://www.findhelp.org/" target="_blank" rel="noopener" data-es-html="Buscar en todo findhelp.org <span class=&quot;arrow&quot;>&rarr;</span>">Search all of findhelp.org <span class="arrow">&rarr;</span></a>
+      <p class="fh-note" data-es="Los resultados vienen directamente de findhelp.org y no forman parte de nuestro Vault verificado a mano.">Results come directly from findhelp.org and aren't part of our hand-verified Vault.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec-panel">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-es="Ayúdanos a mantenerlo preciso">Help us keep it accurate</div>
+      <h2 data-es-html="¿Conoces un recurso, <span class=&quot;accent&quot;>o ves algo incorrecto</span>?">Know a resource, <span class="accent">or see something wrong</span>?</h2>
+      <p data-es="Los refugios cierran, los números de teléfono cambian y los horarios se ajustan. Si conoces un recurso que nos falta, o algo en el Vault está desactualizado, dínoslo directamente y lo corregiremos.">Shelters close, phone numbers change, and hours shift. If you know of a resource we're missing, or something in the Vault is out of date, tell us directly and we'll get it corrected.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="mailto:contact@ourclearhaven.org?subject=Resource%20Vault%20update" data-es-html="Envía un recurso o corrección <span class=&quot;arrow&quot;>&rarr;</span>">Submit a resource or correction <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-card-brown">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-es="Para organizaciones">For organizations</div>
+      <h2 data-es-html="Proveedores <span class=&quot;accent&quot;>Haven</span>"><span class="accent">Haven</span> Providers</h2>
+      <p data-es="Un portal dedicado y seguro donde refugios, bancos de alimentos, arrendadores, clínicas, oficinas legales y otras organizaciones pueden enviar y actualizar sus propios listados directamente, manteniendo el Vault preciso sin que George tenga que hacerlo todo a mano.">A dedicated, secure portal where shelters, food banks, landlords, clinics, legal offices, and other organizations can submit and update their own listings directly, keeping the Vault accurate without George doing it all by hand.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <h2 data-es="Este directorio crece junto con la app.">This directory grows with the app.</h2>
+      <p data-es="Apoya la misión de llevar recursos locales verificados a más personas, más pronto.">Support the mission to bring verified, local resources to more people, sooner.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es-html="Apoya en GoFundMe <span class=&quot;arrow&quot;>&rarr;</span>">Support on GoFundMe <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="logo-nav.png" alt="OUR CLEAR HAVEN" style="height:34px;margin-bottom:10px">
+        <p style="font-size:14px;color:var(--cream-dim);max-width:32ch" data-es="Una organización sin fines de lucro con sede en Bend, Oregon, construyendo Crystal Clear App. En proceso de obtener el estatus 501(c)(3).">A nonprofit based in Bend, Oregon, building Crystal Clear App. Pursuing 501(c)(3) status.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 OUR CLEAR HAVEN &middot; Bend, Oregon</span>
+      <span data-es-html="Sitio creado y mantenido con <a href=&quot;https://maintain-styles.pages.dev&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>mAIntAIn Styles</a>">Site built &amp; maintained with <a href="https://maintain-styles.pages.dev" target="_blank" rel="noopener">mAIntAIn Styles</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><img src="compass-icon.svg" alt=""></button>
+
+<script>
+  document.addEventListener('click', function(e){
+    var menu = document.getElementById('mm');
+    var btn = document.querySelector('.hamburger');
+    if (menu && menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) menu.classList.remove('open');
+  });
+
+  const items = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  items.forEach(i => io.observe(i));
+
+  const totop = document.getElementById('totop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) totop.classList.add('show'); else totop.classList.remove('show');
+  });
+
+  document.querySelectorAll('.btn,.navcta,.hamburger').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const r = document.createElement('span');
+      r.className = 'ripple';
+      r.style.width = r.style.height = size + 'px';
+      r.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      r.style.top = (e.clientY - rect.top - size / 2) + 'px';
+      btn.appendChild(r);
+      setTimeout(() => r.remove(), 650);
+    });
+  });
+</script>
+
+</body>
+</html>

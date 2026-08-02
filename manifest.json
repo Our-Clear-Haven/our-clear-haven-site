@@ -1,0 +1,17 @@
+{
+  "name": "Our Clear Haven",
+  "short_name": "OCH",
+  "description": "OUR CLEAR HAVEN builds Crystal Clear App, a free AI-guided platform connecting people experiencing homelessness to verified local resources, with dignity.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#2c2118",
+  "theme_color": "#2c2118",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

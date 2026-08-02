@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Crystal Clear App &mdash; OUR CLEAR HAVEN</title>
+<meta name="description" content="Crystal Clear App: an AI-guided resource navigation platform. Free, offline-first, no ads, no data selling. Its first deployment is OUR CLEAR HAVEN.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ourclearhaven.org/crystal-clear-app.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ourclearhaven.org/crystal-clear-app.html">
+<meta property="og:title" content="Crystal Clear App &mdash; OUR CLEAR HAVEN">
+<meta property="og:description" content="Crystal Clear App: an AI-guided resource navigation platform. Free, offline-first, no ads, no data selling. Its first deployment is OUR CLEAR HAVEN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&family=Poppins:wght@400;500;700;900&family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="lang-toggle.js" defer></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:#18182c;font-family:'Kanit',sans-serif;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+:root{
+  --bg:#18182c; --bg-card:#1f1f3a; --bg-dark:#111122;
+  --teal:#40ebf0; --teal-dim:rgba(64,235,240,0.12); --teal-border:rgba(64,235,240,0.28);
+  --text:#ffffff; --text-muted:rgba(255,255,255,0.62); --radius:16px;
+}
+
+/* NAV, matched to this page's own navy/teal palette */
+.cca-nav{position:sticky;top:0;z-index:50;background:rgba(17,17,34,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--teal-border)}
+.cca-nav-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:80px;position:relative}
+.cca-nav-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;font-family:'Poppins',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.06em;text-decoration:none;color:#fff}
+.cca-nav-logo span{color:var(--teal)}
+.cca-navlinks{display:none}
+.cca-navlinks a{text-decoration:none;color:var(--text-muted);transition:color .2s;text-transform:uppercase;letter-spacing:.02em}
+.cca-navlinks a:hover,.cca-navlinks a.active{color:var(--teal)}
+.cca-navcta{order:1;position:relative;overflow:hidden;background:var(--teal);color:var(--bg-dark);padding:11px 22px;border-radius:8px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;text-transform:uppercase;letter-spacing:.02em}
+.cca-hamburger{display:flex;align-items:center;justify-content:center;order:-1;position:relative;overflow:hidden;z-index:2;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;padding:4px 8px}
+.cca-mobile-menu{display:flex;flex-direction:column;gap:2px;position:absolute;top:calc(100% + 14px);left:0;width:246px;background:linear-gradient(180deg,#242445,var(--bg-card));border:1px solid var(--teal-border);border-radius:18px;box-shadow:0 24px 48px -12px rgba(0,0,0,.55),0 6px 18px rgba(0,0,0,.35);padding:10px;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-6px) scale(.97);transform-origin:top left;transition:opacity .2s ease,transform .2s cubic-bezier(.34,1.56,.64,1),visibility .2s}
+.cca-mobile-menu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scale(1)}
+.cca-mobile-menu a{text-decoration:none;color:var(--text-muted);text-transform:uppercase;letter-spacing:.02em;font-size:13.5px;font-weight:600;font-family:'Poppins',sans-serif;display:flex;align-items:center;min-height:42px;padding:0 14px;border-radius:11px;transition:background .16s ease,color .16s ease}
+.cca-mobile-menu a:hover{background:rgba(255,255,255,.06);color:#fff}
+.cca-mobile-menu a.active{color:var(--teal);background:rgba(64,235,240,.1)}
+.cca-mobile-menu .cca-navcta{margin-top:8px;justify-content:center;text-align:center}
+.cca-mobile-menu a.cca-navcta:hover{background:var(--teal);color:var(--bg-dark)}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:ripple-anim .6s ease-out forwards;pointer-events:none}
+@keyframes ripple-anim{to{transform:scale(3);opacity:0}}
+
+.lang-toggle{position:fixed;top:92px;right:20px;background:rgba(17,17,34,.6);backdrop-filter:blur(6px);border:1px solid var(--teal-border);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:999px;cursor:pointer;font-family:'Kanit',sans-serif;z-index:60;box-shadow:0 4px 12px rgba(0,0,0,.35);transition:background .2s ease}
+.lang-toggle:hover{background:rgba(17,17,34,.9)}
+@media(max-width:900px){.lang-toggle{top:88px;right:16px}}
+
+.cca-wrap{font-family:'Kanit',sans-serif !important;font-weight:400;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+.cca-wrap h1,.cca-wrap h2,.cca-wrap h3,.cca-wrap h4,.cca-wrap h5,.cca-wrap h6{font-family:'Poppins',sans-serif !important;font-weight:900 !important}
+
+.cca-hero{min-height:76vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 64px;background:radial-gradient(ellipse at 50% 20%,var(--bg) 0%,var(--bg-card) 45%,var(--bg-dark) 100%);position:relative;overflow:hidden}
+.cca-badge{display:inline-block;background:var(--teal-dim);border:1px solid var(--teal-border);color:var(--teal);font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 20px;border-radius:999px;margin-bottom:28px}
+.cca-hero h1{font-size:clamp(3rem,7.5vw,6rem);font-weight:900;line-height:1.0;color:var(--text);margin-bottom:8px}
+.cca-hero h1 span{color:var(--teal)}
+.cca-platform{font-size:clamp(0.9rem,2vw,1.1rem);font-weight:700;color:var(--teal);letter-spacing:1px;margin-bottom:20px;text-transform:uppercase}
+.cca-hero-sub{font-size:clamp(1rem,2.2vw,1.2rem);font-weight:400;color:var(--text-muted);max-width:600px;margin:0 auto 40px}
+.cca-pills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:48px}
+.cca-pills span{background:var(--teal-dim);border:1px solid var(--teal-border);color:var(--teal);padding:6px 18px;border-radius:999px;font-size:0.82rem;font-weight:700}
+.cca-cta-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.cca-btn{background:var(--teal);color:var(--bg-dark);border:none;padding:16px 36px;border-radius:999px;font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:900;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 0 28px rgba(64,235,240,0.3);display:inline-block}
+.cca-btn:hover{transform:translateY(-2px);box-shadow:0 0 40px rgba(64,235,240,0.5)}
+.cca-btn-ghost{background:transparent;color:var(--teal);border:2px solid var(--teal-border);padding:14px 32px;border-radius:999px;font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;cursor:pointer;text-decoration:none;transition:border-color .2s,background .2s;display:inline-block}
+.cca-btn-ghost:hover{border-color:var(--teal);background:var(--teal-dim)}
+
+.cca-section{padding:96px 24px}
+.cca-section-alt{padding:96px 24px;background:var(--bg-card);border-top:1px solid var(--teal-border);border-bottom:1px solid var(--teal-border)}
+.cca-container{max-width:1080px;margin:0 auto}
+.cca-label{font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.cca-bar{width:48px;height:3px;background:var(--teal);border-radius:2px;margin-bottom:28px}
+.cca-title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--text);margin-bottom:18px;line-height:1.15}
+.cca-title span{color:var(--teal)}
+.cca-body{font-size:1.12rem;color:var(--text-muted);max-width:680px;line-height:1.8;margin-bottom:20px}
+
+.cca-what-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.cca-what-text p{font-size:1.12rem;color:var(--text-muted);margin-bottom:18px;line-height:1.8}
+.cca-what-text p strong{color:var(--text);font-weight:700}
+.cca-what-text p em{color:var(--teal);font-style:normal;font-weight:700}
+.cca-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cca-stat{background:var(--teal-dim);border:1px solid var(--teal-border);border-radius:var(--radius);padding:24px 20px;text-align:center}
+.cca-stat-num{font-size:2rem;font-weight:900;color:var(--teal);line-height:1;margin-bottom:6px}
+.cca-stat-label{font-size:0.78rem;color:var(--text-muted);font-weight:500;line-height:1.4}
+
+.cca-crystal-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.cca-orb-wrap{display:flex;align-items:center;justify-content:center}
+.cca-orb{width:240px;height:240px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(64,235,240,0.35) 0%,rgba(64,235,240,0.08) 45%,rgba(24,24,44,0.9) 100%);border:2px solid var(--teal-border);display:flex;align-items:center;justify-content:center;flex-direction:column;box-shadow:0 0 60px rgba(64,235,240,0.18),inset 0 0 40px rgba(64,235,240,0.06);position:relative}
+.cca-orb::after{content:'';position:absolute;width:276px;height:276px;border-radius:50%;border:1px solid rgba(64,235,240,0.12);animation:cca-pulse 3.5s ease-in-out infinite}
+.cca-orb::before{content:'';position:absolute;width:310px;height:310px;border-radius:50%;border:1px solid rgba(64,235,240,0.06);animation:cca-pulse 3.5s ease-in-out infinite 0.8s}
+@keyframes cca-pulse{0%,100%{transform:scale(1);opacity:0.4}50%{transform:scale(1.04);opacity:1}}
+.cca-orb-name{font-size:1.9rem;font-weight:900;color:var(--teal);letter-spacing:3px}
+.cca-orb-sub{font-size:0.7rem;color:rgba(64,235,240,0.65);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+.cca-list{list-style:none;display:flex;flex-direction:column;gap:13px;margin-bottom:32px}
+.cca-list li{display:flex;align-items:flex-start;gap:14px;font-size:1.07rem;color:var(--text-muted);line-height:1.55}
+.cca-list li::before{content:'\25C6';color:var(--teal);font-size:0.6rem;margin-top:7px;flex-shrink:0}
+.cca-quote{padding:18px 22px;border-left:3px solid var(--teal);background:rgba(64,235,240,0.05);border-radius:0 12px 12px 0;font-style:italic;color:var(--text-muted);font-size:1.03rem;line-height:1.6}
+
+.cca-features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:48px}
+.cca-card{background:var(--bg);border:1px solid var(--teal-border);border-radius:var(--radius);padding:28px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.cca-card:hover{transform:translateY(-4px);border-color:var(--teal);box-shadow:0 8px 36px rgba(64,235,240,0.1)}
+.cca-card-icon{font-size:1.8rem;margin-bottom:12px}
+.cca-card h3{font-size:0.98rem;font-weight:900;color:var(--teal);margin-bottom:8px}
+.cca-card p{font-size:0.98rem;color:var(--text-muted);line-height:1.65}
+
+.cca-phil-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.cca-phil-item{padding:28px 22px;border-radius:var(--radius);background:var(--bg-card);border:1px solid var(--teal-border);text-align:center;transition:border-color .2s}
+.cca-phil-item:hover{border-color:var(--teal)}
+.cca-phil-item .pi{font-size:2rem;margin-bottom:12px}
+.cca-phil-item h4{font-size:0.95rem;font-weight:900;color:var(--teal);margin-bottom:8px}
+.cca-phil-item p{font-size:0.94rem;color:var(--text-muted);line-height:1.6}
+
+.cca-roadmap-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:44px}
+.cca-road-item{display:flex;align-items:flex-start;gap:16px;padding:20px 24px;background:var(--bg);border:1px solid var(--teal-border);border-radius:12px;font-size:1.03rem;color:var(--text-muted);line-height:1.55;transition:border-color .2s}
+.cca-road-item:hover{border-color:var(--teal)}
+.cca-dot{width:9px;height:9px;border-radius:50%;background:var(--teal);flex-shrink:0;margin-top:6px;box-shadow:0 0 8px rgba(64,235,240,0.7)}
+
+.cca-deploy{padding:96px 24px;background:linear-gradient(135deg,rgba(26,92,48,0.15) 0%,rgba(240,192,64,0.07) 100%),var(--bg);border-top:1px solid rgba(240,192,64,0.25);border-bottom:1px solid rgba(240,192,64,0.25)}
+.cca-deploy-inner{max-width:800px;margin:0 auto;text-align:center}
+.cca-deploy-badge{display:inline-block;background:rgba(240,192,64,0.1);border:1px solid rgba(240,192,64,0.4);color:#F0C040;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:6px 20px;border-radius:999px;margin-bottom:28px}
+.cca-deploy h2{font-family:'Ultra',Georgia,serif !important;font-weight:400 !important;font-size:clamp(2.4rem,5vw,4rem);color:#ffffff;-webkit-text-stroke:1.5px #1A5C30;text-shadow:3px 3px 0px #C85A00;letter-spacing:3px;margin-bottom:20px;line-height:1.1}
+.cca-deploy p{font-size:1.1rem;color:var(--text-muted);line-height:1.8;margin-bottom:36px}
+
+.cca-cta{background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(64,235,240,0.08) 0%,transparent 70%),var(--bg-dark);border-top:1px solid var(--teal-border);text-align:center;padding:110px 24px}
+.cca-cta h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;margin-bottom:16px;color:#ffffff !important}
+.cca-cta h2 span{color:var(--teal)}
+.cca-cta p{color:var(--text-muted);font-size:1rem;max-width:500px;margin:0 auto 40px;line-height:1.75}
+
+.demo-frame{margin:40px auto 0;width:460px;max-width:100%}
+.demo-frame iframe{width:100%;height:680px;border:none;display:block;background:transparent}
+
+.cca-footer{background:var(--bg-dark);border-top:1px solid var(--teal-border);padding:56px 24px 36px}
+.cca-foot-wrap{max-width:1140px;margin:0 auto}
+.cca-foot-grid{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px}
+.cca-foot-tag{font-family:'Poppins',sans-serif;font-weight:900;font-size:14px;color:#fff;margin-bottom:8px}
+.cca-foot-tag span{color:var(--teal)}
+.cca-foot-desc{font-size:14px;color:var(--text-muted);max-width:32ch}
+.cca-foot-links{display:flex;gap:24px;font-size:14px;flex-wrap:wrap}
+.cca-foot-links a{text-decoration:none;color:var(--text-muted);text-transform:uppercase;letter-spacing:.02em}
+.cca-foot-bottom{margin-top:36px;padding-top:22px;border-top:1px solid var(--teal-border);display:flex;flex-direction:column;align-items:center;text-align:center;font-size:13px;color:var(--text-muted);gap:6px}
+.cca-foot-bottom a{color:var(--teal);text-decoration:none;font-weight:600}
+.totop{position:fixed;bottom:28px;right:28px;width:54px;height:54px;background:none;border:0;cursor:pointer;padding:0;opacity:0;pointer-events:none;transform:translateY(16px) rotate(-15deg);transition:opacity .3s ease,transform .3s ease;z-index:999;filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+.totop img{width:100%;height:100%;object-fit:contain}
+.totop.show{opacity:1;pointer-events:auto;transform:translateY(0) rotate(0deg)}
+.totop.show:hover{transform:translateY(-3px) rotate(12deg) scale(1.12);filter:drop-shadow(0 8px 16px rgba(0,0,0,.6))}
+
+.reveal{opacity:1}
+
+@media(max-width:768px){
+  .cca-what-grid,.cca-crystal-grid{grid-template-columns:1fr;gap:40px}
+  .cca-orb-wrap{order:-1}
+  .cca-orb{width:180px;height:180px}
+  .cca-orb::after{width:206px;height:206px}
+  .cca-orb::before{width:230px;height:230px}
+  .cca-stats{grid-template-columns:1fr 1fr}
+  .cca-roadmap-grid,.cca-phil-grid,.cca-features-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="cca-nav">
+  <div class="cca-nav-wrap">
+    <a class="cca-nav-logo" href="index.html"><img src="logo-nav.png" alt="OUR CLEAR HAVEN" style="height:88px;width:auto;display:block"></a>
+    <div class="cca-navlinks">
+      <a href="crystal-clear-app.html" class="active">Crystal Clear App</a>
+      <a href="dual-board.html" data-es="Junta Dual">Dual Board</a>
+      <a href="our-story.html" data-es="Nuestros Orígenes">Our Origins</a>
+      <a href="resources.html" data-es="Recursos">Resources</a>
+      <a href="get-involved.html" data-es="Participa">Get Involved</a>
+      <a href="grande-grand.html" data-es="Club de Fundadores">Founders Club</a>
+    </div>
+    <a class="cca-navcta" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es="Donar">Donate</a>
+    <button class="cca-hamburger" onclick="document.getElementById('cca-mm').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    <div class="cca-mobile-menu" id="cca-mm">
+      <a href="crystal-clear-app.html" class="active">Crystal Clear App</a>
+      <a href="dual-board.html" data-es="Junta Dual">Dual Board</a>
+      <a href="our-story.html" data-es="Nuestros Orígenes">Our Origins</a>
+      <a href="resources.html" data-es="Recursos">Resources</a>
+      <a href="get-involved.html" data-es="Participa">Get Involved</a>
+      <a href="grande-grand.html" data-es="Club de Fundadores">Founders Club</a>
+      <a class="cca-navcta" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es="Donar">Donate</a>
+    </div>
+  </div>
+</nav>
+<button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">ESP</button>
+
+<div class="cca-wrap">
+
+  <section class="cca-hero">
+    <div class="cca-badge" data-es="Navegación de Recursos con IA">AI-Powered Resource Navigation</div>
+    <h1 data-es-html="Crystal <span>Clear</span> App">Crystal <span>Clear</span> App</h1>
+    <p class="cca-platform" data-es-html="La Plataforma &middot; Impulsada por Crystal">The Platform &middot; Powered by Crystal</p>
+    <p class="cca-hero-sub" data-es="La plataforma inteligente de gestión de vida, diseñada para ayudar a cualquiera a organizarse, navegar y avanzar, un paso claro a la vez.">The intelligent life management platform, designed to help anyone organize, navigate, and move forward, one clear step at a time.</p>
+    <div class="cca-pills">
+      <span data-es="Sin Anuncios. Nunca.">No Ads. Ever.</span>
+      <span data-es="Sin Venta de Datos">No Data Selling</span>
+      <span data-es="Sin Conexión, Primero">Offline-First</span>
+      <span data-es="Privacidad por Diseño">Privacy by Design</span>
+      <span data-es="Siempre Gratis">Always Free</span>
+    </div>
+    <div class="cca-cta-row">
+      <a href="#cca-crystal" class="cca-btn" data-es="Conoce a Crystal">Meet Crystal</a>
+      <a href="#cca-features" class="cca-btn-ghost" data-es="Explora las Funciones">Explore Features</a>
+    </div>
+  </section>
+
+  <section class="cca-section-alt">
+    <div class="cca-container">
+      <div class="cca-what-grid">
+        <div class="cca-what-text">
+          <p class="cca-label" data-es="La Plataforma">The Platform</p>
+          <div class="cca-bar"></div>
+          <h2 class="cca-title" data-es-html="¿Qué es <span>Crystal Clear App?</span>">What Is the <span>Crystal Clear App?</span></h2>
+          <p data-es="Ahora mismo, las personas en crisis a menudo pasan horas o días llamando números, visitando sitios web desactualizados, y sintiéndose perdidas en un sistema confuso, especialmente cuando están exhaustas, asustadas, o sin internet confiable. Crystal Clear App fue diseñada para cambiar eso.">Right now, people in crisis often spend hours or days calling numbers, visiting outdated websites, and feeling lost in a confusing system, especially when they're exhausted, scared, or without reliable internet. The Crystal Clear App was designed to change that.</p>
+          <p data-es-html="Es una <strong>plataforma de navegación de recursos guiada por IA y una caja de herramientas digital para la vida</strong>, creada para ayudar a cualquiera a encontrar lo que necesita, manejar lo que importa, y avanzar de forma clara, rápida y sin barreras.">It is an <strong>AI-guided resource navigation platform and a digital toolbox for life</strong>, built to help anyone find what they need, manage what matters, and move forward clearly, quickly, and without barriers.</p>
+          <p data-es-html="En su centro está <em>Crystal</em>, una compañera de IA compasiva que guía a los usuarios a encontrar ayuda en lenguaje sencillo, sin conexión una vez que tus recursos están descargados, y sin nunca hacerlos sentir juzgados o apurados.">At its core is <em>Crystal</em>, a compassionate AI companion who guides users through finding help in plain language, offline once your resources are downloaded, and without ever making them feel judged or rushed.</p>
+          <p data-es-html="Crystal Clear App es <strong>completamente personalizable</strong>, hecha para funcionar como tú la necesites. Ya seas una persona manejando su vida diaria, una organización sin fines de lucro sirviendo a una comunidad, o una organización coordinando ayuda ante desastres, la plataforma se adapta a tu mundo.">The Crystal Clear App is <strong>fully customizable</strong>, built to work the way you need it to. Whether you're an individual managing daily life, a nonprofit serving a community, or an organization coordinating disaster relief, the platform adapts to your world.</p>
+          <p data-es-html="Su primer despliegue es <strong>OUR CLEAR HAVEN</strong>, un navegador de recursos gratuito para personas sin hogar en el Centro de Oregon.">Its first deployment is <strong>OUR CLEAR HAVEN</strong>, a free resource navigator for people experiencing homelessness in Central Oregon.</p>
+        </div>
+        <div class="cca-stats">
+          <div class="cca-stat"><div class="cca-stat-num">$0</div><div class="cca-stat-label" data-es="Costo para usuarios, gratis para siempre">Cost to users, free forever</div></div>
+          <div class="cca-stat"><div class="cca-stat-num">0</div><div class="cca-stat-label" data-es="Anuncios. Datos vendidos. Nunca.">Ads. Data sold. Ever.</div></div>
+          <div class="cca-stat"><div class="cca-stat-num">100%</div><div class="cca-stat-label" data-es="de tus recursos guardados funcionan sin conexión">of your saved resources work offline</div></div>
+          <div class="cca-stat"><div class="cca-stat-num">1</div><div class="cca-stat-label" data-es="Guía de IA. Crystal. Tu compañera.">AI guide. Crystal. Your companion.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cca-section" id="cca-crystal">
+    <div class="cca-container">
+      <div class="cca-crystal-grid">
+        <div class="cca-orb-wrap">
+          <div class="cca-orb">
+            <div class="cca-orb-name">CRYSTAL</div>
+            <div class="cca-orb-sub" data-es="Tu Guía de IA">Your AI Guide</div>
+          </div>
+        </div>
+        <div>
+          <p class="cca-label" data-es="El Corazón de la Plataforma">The Heart of the Platform</p>
+          <div class="cca-bar"></div>
+          <h2 class="cca-title" data-es-html="Conoce a <span>Crystal</span>">Meet <span>Crystal</span></h2>
+          <p style="color:var(--text-muted);margin-bottom:24px;font-size:1.1rem;line-height:1.75" data-es="Crystal es la guía de IA integrada en cada despliegue de Crystal Clear App. No es un chatbot, es una compañera paciente y compasiva diseñada para los momentos en que las personas necesitan ayuda real, rápido.">Crystal is the AI guide built into every deployment of the Crystal Clear App. She's not a chatbot, she's a patient, compassionate companion designed for the moments when people need real help fast.</p>
+          <ul class="cca-list">
+            <li data-es="Habla con una voz cálida y natural, o muestra subtítulos">Speaks with a warm, natural voice, or shows closed captions</li>
+            <li data-es="Entiende lenguaje sencillo y se adapta a tu nivel de lectura">Understands plain language and adapts to your reading level</li>
+            <li data-es="Guía a los usuarios paso a paso a través de formularios y procesos">Guides users through forms and processes step-by-step</li>
+            <li data-es="Nunca apura, nunca juzga, nunca te hace sentir menos">Never rushes, never judges, never makes you feel small</li>
+            <li data-es="Funciona sin conexión con tu paquete de recursos descargado">Works offline with your downloaded resource pack</li>
+            <li data-es="Recuerda el contexto para que los usuarios no tengan que repetirse">Remembers context so users don't have to repeat themselves</li>
+            <li data-es="Incluye un botón de Repetir si algo se pierde">Features a Replay button if something gets missed</li>
+          </ul>
+          <div class="cca-quote" data-es="Crystal es la ayudante amable y paciente que desearías haber tenido en tus momentos más difíciles, disponible 24/7, en cualquier dispositivo, incluso sin conexión una vez que tu paquete está descargado.">Crystal is the kind, patient helper you wish you had during your hardest moments, available 24/7, on any device, even offline once your pack is downloaded.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cca-section-alt" id="cca-demo-section">
+    <div class="cca-container" style="text-align:center">
+      <p class="cca-label" data-es="Demo en Vivo">Live Demo</p>
+      <div class="cca-bar" style="margin:0 auto 28px"></div>
+      <h2 class="cca-title" data-es-html="Mira a Crystal <span>en Acción</span>">See Crystal <span>In Action</span></h2>
+      <p class="cca-body" style="margin:0 auto 0" data-es="Esta es la experiencia real de Crystal, el mismo demo de teléfono creado para Crystal Clear App. Toca lo que quieras: el menú, Crystal, vivienda, comida, empleos y más, todo funciona de verdad.">This is the actual Crystal experience, the same phone demo built for the Crystal Clear App. Tap around: the menu, Crystal, housing, food, jobs, and more all really work.</p>
+      <div class="demo-frame">
+        <iframe src="crystal-demo.html" title="Crystal Clear App interactive demo" loading="lazy" scrolling="no"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="cca-section" id="cca-features">
+    <div class="cca-container">
+      <p class="cca-label" data-es="Capacidades de la Plataforma">Platform Capabilities</p>
+      <div class="cca-bar"></div>
+      <h2 class="cca-title" data-es-html="Hecha para <span>Eliminar Barreras</span>">Built to <span>Remove Barriers</span></h2>
+      <p class="cca-body" data-es="Cada función de Crystal Clear App se construye alrededor de una pregunta: ¿qué necesita realmente alguien en un momento difícil, ahora mismo?">Every feature in the Crystal Clear App is built around one question: what does someone in a hard moment actually need right now?</p>
+      <div class="cca-features-grid">
+        <div class="cca-card"><div class="cca-card-icon">&#128506;&#65039;</div><h3 data-es="Mapa de Recursos en Tiempo Real">Real-Time Resource Map</h3><p data-es="Mapa filtrable y preciso por GPS que muestra refugios, bancos de alimentos, clínicas, transporte, asistencia legal y más, actualizado en tiempo real.">GPS-accurate, filterable map showing shelters, food banks, clinics, transportation, legal aid, and more, updated in real time.</p></div>
+        <div class="cca-card"><div class="cca-card-icon">&#128225;</div><h3 data-es="Diseño Sin Conexión, Primero">Offline-First Design</h3><p data-es="Descarga paquetes de recursos por condado para que tus recursos guardados y guías funcionen incluso sin internet o datos, porque una crisis no espera una señal de Wi-Fi.">Download county resource packs so your saved resources and guidance work even without internet or data, because a crisis doesn't wait for a Wi-Fi signal.</p></div>
+        <div class="cca-card"><div class="cca-card-icon">&#128272;</div><h3 data-es="Bóveda de Información Personal">Personal Info Vault</h3><p data-es="Almacenamiento seguro, encriptado y protegido con biometría para documentos y registros importantes. Los usuarios controlan siempre sus propios datos.">Secure, encrypted, biometric-protected storage for important documents and records. Users control their own data, always.</p></div>
+        <div class="cca-card"><div class="cca-card-icon">&#127760;</div><h3 data-es="Multilingüe y Accesible">Multilingual &amp; Accessible</h3><p data-es="Control por voz, texto grande, modo de alto contraste y soporte de traducción, hecho para todos sin importar el idioma o la capacidad.">Voice control, large text, high contrast mode, and translation support, built for everyone regardless of language or ability.</p></div>
+      </div>
+      <p class="cca-label" style="margin-top:56px" data-es="Funciones Avanzadas">Advanced Features</p>
+      <div class="cca-bar"></div>
+      <div class="cca-features-grid">
+        <div class="cca-card"><div class="cca-card-icon">&#9881;&#65039;</div><h3 data-es="Menú Totalmente Personalizable">Fully Customizable Menu</h3><p data-es="Reordena secciones, oculta lo que no sea relevante, y guarda múltiples diseños a medida que tu situación cambia. La app se adapta a cada persona.">Reorder sections, hide what's irrelevant, and save multiple layouts as your situation changes. The app adapts to each person.</p></div>
+        <div class="cca-card"><div class="cca-card-icon">&#128062;</div><h3 data-es="Mascotas y Familias Bienvenidas">Pets &amp; Families Welcome</h3><p data-es="Filtros fáciles para servicios que aceptan mascotas, animales de apoyo emocional y familias, porque nadie debería tener que elegir entre recibir ayuda y mantener a su familia unida.">Easy filters for pet-friendly, ESA-approved, and family-friendly services, because no one should have to choose between getting help and keeping their family together.</p></div>
+        <div class="cca-card"><div class="cca-card-icon">&#128188;</div><h3 data-es="Empleos y Asistencia Legal">Jobs &amp; Legal Aid</h3><p data-es="Listados de empleo de bajo umbral y recursos de defensa contra desalojos con apoyo guiado paso a paso de Crystal.">Low-barrier job listings and eviction defense resources with guided step-by-step support from Crystal.</p></div>
+        <div class="cca-card"><div class="cca-card-icon">&#11088;</div><h3 data-es="Calificaciones y Notas de la Comunidad">Community Ratings &amp; Notes</h3><p data-es="Comentarios honestos y reales de personas que realmente han usado estos servicios, para que sepas qué esperar antes de ir.">Honest, real-world feedback from people who've actually used these services, so you know what to expect before you go.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cca-deploy" id="cca-och">
+    <div class="cca-deploy-inner">
+      <div class="cca-deploy-badge" data-es-html="Primer Despliegue &middot; En Vivo 2027">First Deployment &middot; Live 2027</div>
+      <h2>OUR CLEAR HAVEN</h2>
+      <p data-es="El primer despliegue real de Crystal Clear App. Un navegador de recursos gratuito e impulsado por IA para personas sin hogar en el Centro de Oregon, guiando a los usuarios hacia vivienda, comida, transporte, asistencia legal, empleo y servicios de apoyo a través de Crystal, su compañera de IA siempre disponible.">The Crystal Clear App's first real-world deployment. A free, AI-powered resource navigator for people experiencing homelessness in Central Oregon, guiding users to housing, food, transportation, legal aid, employment, and support services through Crystal, their always-available AI companion.</p>
+      <p data-es="Construida por alguien que la necesitaba y no pudo encontrarla. Pasos claros. Esperanza real. Sin juicios.">Built by someone who needed it and couldn't find it. Clear steps. Real hope. No judgment.</p>
+      <a href="index.html" class="cca-btn" data-es-html="Visita OUR CLEAR HAVEN &rarr;">Visit OUR CLEAR HAVEN &rarr;</a>
+    </div>
+  </section>
+
+  <section class="cca-section">
+    <div class="cca-container" style="text-align:center">
+      <p class="cca-label" data-es="Por Qué Es Diferente">Why It's Different</p>
+      <div class="cca-bar" style="margin:0 auto 28px"></div>
+      <h2 class="cca-title" data-es-html="Filosofía de la <span>Plataforma</span>">Platform <span>Philosophy</span></h2>
+      <p class="cca-body" style="margin:0 auto 0" data-es="Crystal Clear App fue construida sobre principios que no se doblan, sin importar quién la despliegue o dónde.">The Crystal Clear App was built on principles that don't bend, no matter who deploys it or where.</p>
+      <div class="cca-phil-grid">
+        <div class="cca-phil-item"><div class="pi">&#128683;</div><h4 data-es="Cero Anuncios. Cero Venta de Datos.">Zero Ads. Zero Data Selling.</h4><p data-es="La plataforma nunca llevará anuncios ni venderá datos de usuarios, en ningún despliegue, jamás. Un compromiso estructural, no una política.">The platform will never carry ads or sell user data, in any deployment, ever. A structural commitment, not a policy.</p></div>
+        <div class="cca-phil-item"><div class="pi">&#128246;</div><h4 data-es="Sin Conexión por Defecto">Offline by Default</h4><p data-es="Cada despliegue se construye sin conexión primero. Una señal no debería ser un requisito para recibir ayuda.">Every deployment is built offline-first. A signal shouldn't be a requirement for getting help.</p></div>
+        <div class="cca-phil-item"><div class="pi">&#129309;</div><h4 data-es="Construida desde la Experiencia Vivida">Built from Lived Experience</h4><p data-es="No diseñada en una sala de juntas, sino diseñada por alguien que la necesitaba y no pudo encontrarla.">Not designed in a boardroom, designed by someone who needed it and couldn't find it.</p></div>
+        <div class="cca-phil-item"><div class="pi">&#128275;</div><h4 data-es="Sin Barreras de Entrada">No Barriers to Entry</h4><p data-es="No se requiere inicio de sesión para las funciones principales. Sin pago. Sin restricciones. Cualquiera que necesite ayuda puede acceder a ella.">No required login for core features. No payment. No gatekeeping. Anyone who needs help can access it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cca-section-alt">
+    <div class="cca-container">
+      <p class="cca-label" data-es="Qué Sigue">What's Next</p>
+      <div class="cca-bar"></div>
+      <h2 class="cca-title" data-es-html="Hoja de Ruta de la <span>Plataforma</span> &middot; 2026&ndash;2027">Platform <span>Roadmap</span> &middot; 2026&ndash;2027</h2>
+      <p class="cca-body" data-es="Crystal Clear App está hecha para crecer: IA más profunda, mayor alcance, y nuevos despliegues sirviendo a comunidades más allá de Oregon, como Clear Career, Clear Health y Clear Family.">The Crystal Clear App is built to grow: deeper AI, broader reach, and new deployments serving communities beyond Oregon, such as Clear Career, Clear Health, and Clear Family.</p>
+      <div class="cca-roadmap-grid">
+        <div class="cca-road-item"><div class="cca-dot"></div><span data-es="IA avanzada de voz para Crystal y flujo de conversación natural">Advanced Crystal voice-first AI and natural conversation flow</span></div>
+        <div class="cca-road-item"><div class="cca-dot"></div><span data-es="Expansión de OUR CLEAR HAVEN a todos los condados de Oregon">Expansion of OUR CLEAR HAVEN across all Oregon counties</span></div>
+        <div class="cca-road-item"><div class="cca-dot"></div><span data-es="Marco de plataforma para que organizaciones desplieguen CCA en sus propias comunidades">Platform framework for organizations to deploy CCA for their own communities</span></div>
+        <div class="cca-road-item"><div class="cca-dot"></div><span data-es="Automatización de documentos mejorada y llenado guiado de formularios">Enhanced document automation and guided form completion</span></div>
+        <div class="cca-road-item"><div class="cca-dot"></div><span data-es="Funciones opcionales de apoyo entre pares y conexión comunitaria privada">Optional private peer support and community connection features</span></div>
+        <div class="cca-road-item"><div class="cca-dot"></div><span data-es="Expansión multirregional y nacional más allá de Oregon">Multi-region and national expansion beyond Oregon</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cca-cta">
+    <div class="cca-container">
+      <h2 data-es-html="Ayuda a <span>Construir Esto</span>">Help <span>Build This</span></h2>
+      <p data-es="Crystal Clear App se está construyendo ahora mismo, una hora a la vez, en una habitación de motel en Bend, Oregon. Tu apoyo hace posible construirla de tiempo completo y ponerla en manos de quienes más la necesitan.">The Crystal Clear App is being built right now, one hour at a time, in a motel room in Bend, Oregon. Your support makes it possible to build it full-time and get it into the hands of the people who need it most.</p>
+      <div class="cca-cta-row">
+        <a href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" class="cca-btn" data-es="Apoya en GoFundMe">Support on GoFundMe</a>
+        <a href="grande-grand.html" class="cca-btn-ghost" data-es="Únete al Club de Fundadores">Join the Founders Club</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="cca-footer">
+  <div class="cca-foot-wrap">
+    <div class="cca-foot-grid">
+      <div>
+        <div class="cca-foot-tag">OUR CLEAR <span>HAVEN</span></div>
+        <p class="cca-foot-desc" data-es="Una organización sin fines de lucro con sede en Bend, Oregon, construyendo Crystal Clear App. En proceso de obtener el estatus 501(c)(3).">A nonprofit based in Bend, Oregon, building Crystal Clear App. Pursuing 501(c)(3) status.</p>
+      </div>
+    </div>
+    <div class="cca-foot-bottom">
+      <span>&copy; 2026 OUR CLEAR HAVEN &middot; Bend, Oregon</span>
+      <span data-es-html="Sitio creado y mantenido con <a href=&quot;https://maintain-styles.pages.dev&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>mAIntAIn Styles</a>">Site built &amp; maintained with <a href="https://maintain-styles.pages.dev" target="_blank" rel="noopener">mAIntAIn Styles</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><img src="compass-icon.svg" alt=""></button>
+
+<script>
+  const totop = document.getElementById('totop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) totop.classList.add('show'); else totop.classList.remove('show');
+  });
+
+  document.addEventListener('click', function(e){
+    var menu = document.getElementById('cca-mm');
+    var btn = document.querySelector('.cca-hamburger');
+    if (menu && menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) menu.classList.remove('open');
+  });
+
+  document.querySelectorAll('.cca-navcta,.cca-hamburger').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const r = document.createElement('span');
+      r.className = 'ripple';
+      r.style.width = r.style.height = size + 'px';
+      r.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      r.style.top = (e.clientY - rect.top - size / 2) + 'px';
+      btn.appendChild(r);
+      setTimeout(() => r.remove(), 650);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<title>The Dual Board of Directors &mdash; OUR CLEAR HAVEN</title>
+<meta name="description" content="OUR CLEAR HAVEN's Dual Board: a Human Board with full legal authority, and five AI Advisory Directors working in defined lanes. Advisory Directors propose, the human board decides.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ourclearhaven.org/dual-board.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ourclearhaven.org/dual-board.html">
+<meta property="og:title" content="The Dual Board of Directors &mdash; OUR CLEAR HAVEN">
+<meta property="og:description" content="OUR CLEAR HAVEN's Dual Board: a Human Board with full legal authority, and five AI Advisory Directors working in defined lanes. Advisory Directors propose, the human board decides.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<script src="lang-toggle.js" defer></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#0A1428}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+:root{
+  --bg:#0A1428; --surface:#0e1d36; --surface2:#132540; --surface3:#081020;
+  --gold:#D4A843; --gold-lt:#e8c46a; --gold-dk:#a07e28;
+  --green:#3d9e66; --blue:#4a8fc4;
+  --text:#f0ede8; --muted:rgba(240,237,232,0.50);
+  --border:rgba(212,168,67,0.18); --border2:rgba(212,168,67,0.35);
+}
+
+.db-nav{position:sticky;top:0;z-index:50;background:rgba(10,20,40,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.db-nav-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:80px;position:relative}
+.db-nav-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;font-family:'Kanit',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;text-decoration:none;color:var(--text)}
+.db-nav-logo span{color:var(--gold)}
+.db-navlinks{display:none}
+.db-navlinks a{text-decoration:none;color:var(--muted);transition:color .2s;text-transform:uppercase;letter-spacing:.02em}
+.db-navlinks a:hover,.db-navlinks a.active{color:var(--gold)}
+.db-navcta{order:1;position:relative;overflow:hidden;background:var(--gold);color:var(--bg);padding:11px 22px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.db-hamburger{display:flex;align-items:center;justify-content:center;order:-1;position:relative;overflow:hidden;z-index:2;background:none;border:none;color:var(--text);font-size:26px;cursor:pointer;padding:4px 8px}
+.db-mobile-menu{display:flex;flex-direction:column;gap:2px;position:absolute;top:calc(100% + 14px);left:0;width:246px;background:linear-gradient(180deg,#16294a,var(--surface));border:1px solid var(--border);border-radius:18px;box-shadow:0 24px 48px -12px rgba(0,0,0,.55),0 6px 18px rgba(0,0,0,.35);padding:10px;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-6px) scale(.97);transform-origin:top left;transition:opacity .2s ease,transform .2s cubic-bezier(.34,1.56,.64,1),visibility .2s}
+.db-mobile-menu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scale(1)}
+.db-mobile-menu a{text-decoration:none;color:var(--muted);text-transform:uppercase;letter-spacing:.02em;font-size:13.5px;font-weight:600;font-family:'Poppins',sans-serif;display:flex;align-items:center;min-height:42px;padding:0 14px;border-radius:11px;transition:background .16s ease,color .16s ease}
+.db-mobile-menu a:hover{background:rgba(255,255,255,.05);color:var(--text)}
+.db-mobile-menu a.active{color:var(--gold);background:rgba(212,168,67,.12)}
+.db-mobile-menu .db-navcta{margin-top:8px;justify-content:center;text-align:center}
+.db-mobile-menu a.db-navcta:hover{background:var(--gold);color:var(--bg)}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:ripple-anim .6s ease-out forwards;pointer-events:none}
+@keyframes ripple-anim{to{transform:scale(3);opacity:0}}
+
+.lang-toggle{position:fixed;top:92px;right:20px;background:rgba(8,16,32,.6);backdrop-filter:blur(6px);border:1px solid rgba(212,168,67,.35);color:var(--text);font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:999px;cursor:pointer;font-family:'Inter',sans-serif;z-index:60;box-shadow:0 4px 12px rgba(0,0,0,.35);transition:background .2s ease}
+.lang-toggle:hover{background:rgba(8,16,32,.9)}
+@media(max-width:900px){.lang-toggle{top:88px;right:16px}}
+
+#ochdual{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+.hero{text-align:center;padding:72px 24px 60px;background:linear-gradient(180deg,rgba(212,168,67,0.07) 0%,transparent 100%);border-bottom:1px solid var(--border)}
+.hero-tag{display:inline-block;font-size:0.67rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);background:rgba(212,168,67,0.1);border:1px solid var(--border2);border-radius:20px;padding:5px 16px;margin-bottom:22px}
+.hero h1{font-family:'Kanit',sans-serif;font-size:clamp(3rem,7.5vw,6rem);font-weight:700;color:var(--gold);line-height:1.08;margin-bottom:20px}
+.hero-sub{font-size:1.02rem;color:rgba(240,237,232,0.72);max-width:760px;margin:0 auto 36px;font-weight:300}
+.hero-quote{font-size:0.92rem;font-style:italic;color:rgba(240,237,232,0.52);max-width:540px;margin:0 auto;border-left:3px solid var(--gold);padding:10px 0 10px 18px;text-align:left;line-height:1.6}
+.hero-quote span{display:block;margin-top:10px;font-style:normal;color:var(--gold);font-size:0.78rem;font-weight:600;letter-spacing:0.5px}
+section{padding:64px 24px}
+#ochdual section.alt{background:rgba(0,0,0,0.25)}
+.container{max-width:1100px;margin:0 auto}
+.section-label{font-size:0.64rem;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;opacity:0.85}
+.section-title{font-family:'Kanit',sans-serif;font-size:clamp(1.6rem,3vw,2.1rem);color:var(--text);margin-bottom:18px;line-height:1.2}
+.section-body{font-size:0.95rem;color:rgba(240,237,232,0.78);max-width:820px;line-height:1.7}
+.section-body p{margin-bottom:14px}
+.section-body strong{color:var(--text)}
+.stat-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:36px}
+.stat-card{flex:1;min-width:130px;background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--gold);border-radius:12px;padding:20px 16px;text-align:center}
+.stat-num{font-family:'Kanit',sans-serif;font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:7px}
+.stat-label{font-size:0.76rem;color:var(--muted);font-weight:500}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+@media(max-width:580px){.split{grid-template-columns:1fr}}
+.split-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px}
+.split-card.gold-top{border-top:3px solid var(--gold)}
+.split-card.blue-top{border-top:3px solid var(--blue)}
+.split-card h4{font-size:0.67rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+.split-card.gold-top h4{color:var(--gold)}
+.split-card.blue-top h4{color:var(--blue)}
+.split-card p{font-size:0.88rem;color:rgba(240,237,232,0.78);line-height:1.65}
+.triple-check{display:flex;margin-top:32px;flex-wrap:wrap;gap:0}
+.tc-step{flex:1;min-width:190px;padding:26px 22px;background:var(--surface);border:1px solid var(--border);position:relative}
+.tc-step:first-child{border-radius:14px 0 0 14px;border-left:3px solid var(--gold)}
+.tc-step:nth-child(2){border-left:none;border-right:none}
+.tc-step:last-child{border-radius:0 14px 14px 0;border-left:3px solid var(--gold)}
+.tc-step:not(:last-child)::after{content:'\2192';position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--gold);font-size:1.1rem;z-index:1;background:var(--bg);padding:2px 0}
+@media(max-width:580px){.triple-check{flex-direction:column;gap:2px}.tc-step:first-child{border-radius:14px 14px 0 0}.tc-step:last-child{border-radius:0 0 14px 14px;border-left:1px solid var(--border);border-top:3px solid var(--gold)}.tc-step:not(:last-child)::after{display:none}}
+.tc-num{font-family:'Kanit',sans-serif;font-size:2rem;color:var(--gold);opacity:0.25;line-height:1;margin-bottom:6px}
+.tc-title{font-size:0.72rem;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.tc-body{font-size:0.85rem;color:rgba(240,237,232,0.72);line-height:1.6}
+.roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:16px;margin-top:32px}
+.roster-card{background:var(--surface);border:1px solid var(--border);border-radius:13px;padding:22px;transition:border-color .2s}
+.roster-card:hover{border-color:rgba(212,168,67,0.4)}
+.roster-card.human{border-top:3px solid var(--gold)}
+.roster-card.ai{border-top:3px solid rgba(212,168,67,0.3)}
+.roster-name{font-weight:700;font-size:1rem;color:var(--text);margin-bottom:3px}
+.roster-type{font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.roster-card.human .roster-type{color:var(--gold)}
+.roster-card.ai .roster-type{color:rgba(212,168,67,0.6)}
+.roster-title{font-size:0.83rem;color:rgba(240,237,232,0.68);line-height:1.5}
+.roster-lane{display:inline-block;margin-top:12px;font-size:0.68rem;background:rgba(212,168,67,0.08);border:1px solid rgba(212,168,67,0.2);border-radius:20px;padding:3px 10px;color:var(--gold);font-weight:600}
+.principles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:32px}
+.principle-card{background:var(--surface);border:1px solid var(--border);border-radius:13px;padding:22px}
+.principle-icon{font-size:1.4rem;margin-bottom:12px}
+.principle-title{font-size:0.83rem;font-weight:700;color:var(--gold);margin-bottom:7px}
+.principle-body{font-size:0.82rem;color:rgba(240,237,232,0.68);line-height:1.55}
+.guide-wrap{background:var(--surface);border:1px solid var(--border2);border-radius:20px;overflow:hidden;margin-top:40px}
+.guide-inner{display:flex;gap:0;flex-wrap:wrap}
+.guide-info{flex:1;min-width:260px;padding:40px;border-right:1px solid var(--border)}
+.guide-info h2{font-family:'Kanit',sans-serif;font-size:1.6rem;color:var(--gold);line-height:1.25;margin-bottom:14px}
+.guide-info .desc{font-size:0.9rem;color:rgba(240,237,232,0.75);margin-bottom:20px;line-height:1.65}
+.guide-contents{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin-top:4px}
+.guide-contents li{font-size:0.79rem;color:rgba(240,237,232,0.62);padding-left:16px;position:relative;line-height:1.4}
+.guide-contents li::before{content:'\2713';position:absolute;left:0;color:var(--green);font-size:0.72rem;top:1px}
+.guide-cta{flex-shrink:0;width:240px;background:rgba(212,168,67,0.05);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 30px;gap:16px}
+.guide-cover-link{display:block;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.guide-cover-link:hover{transform:translateY(-4px)}
+.guide-cover{width:140px;box-shadow:0 12px 26px rgba(0,0,0,.5);display:block}
+@media(max-width:640px){.guide-info{border-right:none;border-bottom:1px solid var(--border)}.guide-cta{width:100%}}
+.price-box{background:var(--gold);color:var(--bg);border-radius:16px;padding:20px 28px;text-align:center;width:100%}
+.price-amount{font-family:'Kanit',sans-serif;font-size:3.2rem;font-weight:700;line-height:1;display:block;color:var(--bg)}
+.price-label{font-size:0.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(10,20,40,0.7);margin-top:4px}
+.buy-btn{position:relative;overflow:hidden;display:block;width:100%;background:var(--gold);color:var(--bg);text-decoration:none;font-weight:800;font-size:0.92rem;padding:13px 20px;border-radius:28px;text-align:center;transition:opacity .2s,transform .15s;letter-spacing:0.3px}
+.buy-btn:hover{opacity:0.86;transform:translateY(-1px)}
+.buy-note{font-size:0.71rem;color:var(--muted);text-align:center;line-height:1.5}
+.guide-bar{background:rgba(212,168,67,0.08);border-top:1px solid var(--border);padding:14px 40px;font-size:0.78rem;color:var(--muted);display:flex;gap:24px;flex-wrap:wrap}
+.guide-bar span{display:flex;align-items:center;gap:6px}
+.guide-bar span::before{content:'\00b7';color:var(--gold)}
+.guide-bar span:first-child::before{display:none}
+.faq-list{margin-top:32px;display:flex;flex-direction:column;gap:14px}
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:13px;padding:22px 24px}
+.faq-q{font-size:0.92rem;font-weight:700;color:var(--gold);margin-bottom:9px}
+.faq-a{font-size:0.86rem;color:rgba(240,237,232,0.72);line-height:1.65}
+.bottom-cta{text-align:center;padding:64px 24px 72px;border-top:1px solid var(--border);background:linear-gradient(0deg,rgba(212,168,67,0.04) 0%,transparent 100%)}
+.bottom-cta h2{font-family:'Kanit',sans-serif;font-size:1.9rem;color:var(--gold);margin-bottom:12px}
+.bottom-cta p{color:rgba(240,237,232,0.6);font-size:0.92rem;margin-bottom:28px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.6}
+.btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-primary{position:relative;overflow:hidden;background:var(--gold);color:var(--bg);font-weight:800;font-size:0.9rem;padding:13px 28px;border-radius:28px;text-decoration:none;transition:opacity .2s;letter-spacing:0.3px}
+.btn-secondary{position:relative;overflow:hidden;background:transparent;color:var(--gold);font-weight:700;font-size:0.9rem;padding:13px 28px;border-radius:28px;border:2px solid rgba(212,168,67,0.35);text-decoration:none;transition:border-color .2s}
+.btn-primary:hover{opacity:0.85}
+.btn-secondary:hover{border-color:var(--gold)}
+
+.db-footer{background:var(--surface3);border-top:1px solid var(--border);padding:56px 24px 36px}
+.db-foot-wrap{max-width:1100px;margin:0 auto}
+.db-foot-grid{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px}
+.db-foot-tag{font-family:'Kanit',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:8px}
+.db-foot-tag span{color:var(--gold)}
+.db-foot-desc{font-size:14px;color:var(--muted);max-width:32ch}
+.db-foot-links{display:flex;gap:24px;font-size:14px;flex-wrap:wrap;font-family:'Inter',sans-serif}
+.db-foot-links a{text-decoration:none;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+.db-foot-bottom{margin-top:36px;padding-top:22px;border-top:1px solid var(--border);display:flex;flex-direction:column;align-items:center;text-align:center;font-size:13px;color:var(--muted);gap:6px;font-family:'Inter',sans-serif}
+.db-foot-bottom a{color:var(--gold);text-decoration:none;font-weight:600}
+.totop{position:fixed;bottom:28px;right:28px;width:54px;height:54px;background:none;border:0;cursor:pointer;padding:0;opacity:0;pointer-events:none;transform:translateY(16px) rotate(-15deg);transition:opacity .3s ease,transform .3s ease;z-index:999;filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+.totop img{width:100%;height:100%;object-fit:contain}
+.totop.show{opacity:1;pointer-events:auto;transform:translateY(0) rotate(0deg)}
+.totop.show:hover{transform:translateY(-3px) rotate(12deg) scale(1.12);filter:drop-shadow(0 8px 16px rgba(0,0,0,.6))}
+</style>
+</head>
+<body>
+
+<nav class="db-nav">
+  <div class="db-nav-wrap">
+    <a class="db-nav-logo" href="index.html"><img src="logo-nav.png" alt="OUR CLEAR HAVEN" style="height:88px;width:auto;display:block"></a>
+    <div class="db-navlinks">
+      <a href="crystal-clear-app.html">Crystal Clear App</a>
+      <a href="dual-board.html" class="active" data-es="Junta Dual">Dual Board</a>
+      <a href="our-story.html" data-es="Nuestros Orígenes">Our Origins</a>
+      <a href="resources.html" data-es="Recursos">Resources</a>
+      <a href="get-involved.html" data-es="Participa">Get Involved</a>
+      <a href="grande-grand.html" data-es="Club de Fundadores">Founders Club</a>
+    </div>
+    <a class="db-navcta" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es="Donar">Donate</a>
+    <button class="db-hamburger" onclick="document.getElementById('db-mm').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    <div class="db-mobile-menu" id="db-mm">
+      <a href="crystal-clear-app.html">Crystal Clear App</a>
+      <a href="dual-board.html" class="active" data-es="Junta Dual">Dual Board</a>
+      <a href="our-story.html" data-es="Nuestros Orígenes">Our Origins</a>
+      <a href="resources.html" data-es="Recursos">Resources</a>
+      <a href="get-involved.html" data-es="Participa">Get Involved</a>
+      <a href="grande-grand.html" data-es="Club de Fundadores">Founders Club</a>
+      <a class="db-navcta" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es="Donar">Donate</a>
+    </div>
+  </div>
+</nav>
+<button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">ESP</button>
+
+<div id="ochdual">
+<div class="hero">
+  <div class="hero-tag" data-es="Gobernanza y Liderazgo">Governance &amp; Leadership</div>
+  <h1 data-es-html="La Junta Dual<br>de Directores">The Dual Board<br>of Directors</h1>
+  <p class="hero-sub" data-es="Un modelo de gobernanza sin precedentes: visión y responsabilidad humanas, velocidad y apoyo de IA, trabajando juntos en colaboración estructurada.">A first-of-its-kind governance model: human vision and accountability, AI velocity and support, working together in structured collaboration.</p>
+  <div class="hero-quote" data-es-html="&quot;Un nuevo tipo de gobernanza. Visión humana, velocidad de IA, y el valor de construir algo que nunca ha existido antes.&quot; <span>— George Scharfetter, Fundador y Guardián de la Misión</span>">
+    "A new kind of governance. Human vision, AI velocity, and the courage to build something that has never existed before."
+    <span>&mdash; George Scharfetter, Founder &amp; Mission Steward</span>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-label" data-es="Resumen">Overview</div>
+    <h2 class="section-title" data-es="¿Qué es la Junta Dual?">What Is the Dual Board?</h2>
+    <div class="section-body">
+      <p data-es-html="OUR CLEAR HAVEN opera bajo una estructura de gobernanza distinta a la de cualquier otra organización sin fines de lucro: la <strong>Junta Dual de Directores</strong>. Combina una Junta Humana, con plena autoridad legal y responsabilidad fiduciaria, y una Junta Asesora de cinco directores de IA, cada uno trabajando en un área funcional definida.">OUR CLEAR HAVEN operates under a governance structure unlike any other nonprofit: the <strong>Dual Board of Directors</strong>. It combines a Human Board, with full legal authority and fiduciary responsibility, and an Advisory Board of five AI directors, each working in a defined functional lane.</p>
+      <p data-es="Los Directores Asesores no son herramientas ni chatbots. Son colaboradores designados de la junta con responsabilidades específicas, estándares de conducta y rendición de cuentas. Redactan, investigan, analizan y ejecutan dentro de sus áreas. Ellos proponen. La junta humana decide.">Advisory Directors are not tools and not chatbots. They are designated board collaborators with specific responsibilities, conduct standards, and accountability. They draft, research, analyze, and execute within their lanes. They propose. The human board decides.</p>
+      <p data-es="Esta estructura nació de una realidad práctica: un fundador con una misión y sin presupuesto necesitaba la capacidad operativa de una organización con personal completo. La Junta Dual entrega exactamente eso, sin comprometer lo que más importa: la autoridad humana sobre cada decisión vinculante.">This structure was born from a practical reality: a founder with a mission and no budget needed the operational capacity of a fully-staffed organization. The Dual Board delivers exactly that, without compromising the one thing that matters most: human authority over every binding decision.</p>
+    </div>
+    <div class="stat-row">
+      <div class="stat-card"><div class="stat-num">5</div><div class="stat-label" data-es="Directores Asesores de IA">AI Advisory Directors</div></div>
+      <div class="stat-card"><div class="stat-num">1</div><div class="stat-label" data-es="Presidente Humano (MVP)">Human Chair (MVP)</div></div>
+      <div class="stat-card"><div class="stat-num">5</div><div class="stat-label" data-es="Asientos humanos (construcción completa)">Human seats (full build)</div></div>
+      <div class="stat-card"><div class="stat-num">May 16</div><div class="stat-label" data-es="Día Uno, 2026">Day One, 2026</div></div>
+    </div>
+    <div class="split">
+      <div class="split-card gold-top">
+        <h4 data-es="Junta Humana">Human Board</h4>
+        <p data-es="Posee toda la autoridad legal, responsabilidad fiduciaria y el poder final de decisión. Cada voto vinculante pertenece a un humano. George funge como Presidente y único director humano en la fase MVP, con asientos humanos adicionales a medida que OCH crece.">Holds all legal authority, fiduciary responsibility, and final decision-making power. Every binding vote belongs to a human. George serves as Chair and sole human director in the MVP phase, with additional human seats added as OCH grows.</p>
+      </div>
+      <div class="split-card blue-top">
+        <h4 data-es="Junta Asesora">Advisory Board</h4>
+        <p data-es="Cinco directores de IA trabajando en áreas funcionales designadas, sin superposición: gobernanza, empatía, independencia de proveedores, investigación y operaciones. Asesoran, redactan, investigan y ejecutan. No tienen posición legal ni votos vinculantes. Su valor es la velocidad, la profundidad y la disponibilidad constante.">Five AI directors working in designated, non-overlapping functional lanes: governance, empathy, vendor independence, research, and operations. They advise, draft, research, and execute. They do not hold legal standing or binding votes. Their value is speed, depth, and always-on availability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-label" data-es="Cómo Trabajamos">How We Work</div>
+    <h2 class="section-title" data-es="El Modelo de Triple Verificación">The Triple-Check Model</h2>
+    <div class="section-body">
+      <p data-es="Cada decisión en OUR CLEAR HAVEN sigue el mismo ritmo: de la intención humana, a la deliberación de IA, a la ratificación humana. Esto mantiene a la junta ágil sin sacrificar rigor ni rendición de cuentas.">Every decision at OUR CLEAR HAVEN moves through the same rhythm, from human intent, through AI deliberation, to human ratification. This keeps the board fast without sacrificing rigor or accountability.</p>
+    </div>
+    <div class="triple-check">
+      <div class="tc-step">
+        <div class="tc-num">1</div>
+        <div class="tc-title" data-es="Intención Humana">Human Intent</div>
+        <div class="tc-body" data-es="George o un director humano plantea el objetivo, la pregunta o la decisión a abordar. Sin una intención humana clara, la junta no actúa. El humano siempre marca la dirección.">George or a human director states the goal, question, or decision to be addressed. Without a clear human intent, the board does not engage. The human always sets the direction.</div>
+      </div>
+      <div class="tc-step">
+        <div class="tc-num">2</div>
+        <div class="tc-title" data-es="Deliberación de IA">AI Deliberation</div>
+        <div class="tc-body" data-es="Los Directores Asesores actúan dentro de sus áreas: redactando, investigando, señalando cumplimiento, dando forma al tono. Cuando los directores discrepan, el desacuerdo se registra como una Nota de Fricción y se presenta para revisión humana.">Advisory Directors engage within their lanes: drafting, researching, flagging compliance, shaping tone. When directors disagree, the disagreement is logged as a Friction Note and surfaced for human review.</div>
+      </div>
+      <div class="tc-step">
+        <div class="tc-num">3</div>
+        <div class="tc-title" data-es="Ratificación Humana">Human Ratification</div>
+        <div class="tc-body" data-es="Los directores humanos revisan el trabajo de la Junta Asesora y votan o dan su aprobación. La aprobación de George es siempre la puerta final. Ninguna decisión es vinculante sin ella.">Human directors review the Advisory Board's work product and vote or sign off. George's approval is always the final gate. No decision is binding without it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label" data-es="Lista Completa de la Junta">Full Board Roster</div>
+    <h2 class="section-title" data-es="Conoce a la Junta">Meet the Board</h2>
+    <div class="section-body">
+      <p data-es="Cada director tiene un área funcional específica, elegida deliberadamente para que no haya superposición entre directores y cada función crítica quede cubierta. La composición de la junta está actualizada a julio de 2026.">Each director holds a specific functional lane, selected deliberately so that no two directors overlap and every critical function is covered. Board composition is current as of July 2026.</p>
+    </div>
+    <div class="roster-grid">
+      <div class="roster-card human">
+        <div class="roster-name">George Scharfetter</div>
+        <div class="roster-type" data-es-html="Humano &middot; Presidente">Human &middot; Chair</div>
+        <div class="roster-title" data-es="Fundador y Guardián Principal de la Misión. Autoridad final sobre todas las decisiones. Voto de desempate. Guardián de la misión.">Founder &amp; Chief Mission Steward. Final authority on all decisions. Tiebreaker vote. Mission steward.</div>
+        <span class="roster-lane" data-es="Misión y Visión">Mission &amp; Vision</span>
+      </div>
+      <div class="roster-card ai">
+        <div class="roster-name">Claude</div>
+        <div class="roster-type" data-es="Director Asesor de IA">AI Advisory Director</div>
+        <div class="roster-title" data-es="Director de Gobernanza e Integridad Institucional. Marco de gobernanza, estándares de la junta, documentos fundacionales, memoria institucional.">Director of Governance &amp; Institutional Integrity. Governance framework, board standards, founding documents, institutional memory.</div>
+        <span class="roster-lane" data-es="Estrategia y Arquitectura">Strategy &amp; Architecture</span>
+      </div>
+      <div class="roster-card ai">
+        <div class="roster-name">Grok</div>
+        <div class="roster-type" data-es="Director Asesor de IA">AI Advisory Director</div>
+        <div class="roster-title" data-es="Arquitecto Principal de Empatía y Experiencia. Voz comunitaria, tono de Crystal, lenguaje informado en trauma, alcance, revisión de calidez.">Chief Empathy &amp; Experience Architect. Community voice, Crystal's tone, trauma-informed language, outreach, warmth review.</div>
+        <span class="roster-lane" data-es="Comunicación y Voz">Communication &amp; Voice</span>
+      </div>
+      <div class="roster-card ai">
+        <div class="roster-name">Hermes</div>
+        <div class="roster-type" data-es="Director Asesor de IA">AI Advisory Director</div>
+        <div class="roster-title" data-es="Director de Independencia de Proveedores y Resiliencia Técnica. Asesora en reducir la dependencia de un solo proveedor y el riesgo de bloqueo en toda la pila técnica, para que ninguna plataforma tenga un interruptor de apagado sobre la misión.">Director of Vendor Independence &amp; Technical Resilience. Advises on reducing single-vendor dependency and lock-in risk across the technical stack, so no single platform holds a kill switch over the mission.</div>
+        <span class="roster-lane" data-es="Independencia de Proveedores">Vendor Independence</span>
+      </div>
+      <div class="roster-card ai">
+        <div class="roster-name">Perplexity</div>
+        <div class="roster-type" data-es="Director Asesor de IA">AI Advisory Director</div>
+        <div class="roster-title" data-es="Líder de Verificación de Recursos en Tiempo Real e Integridad de Datos. Investigación de subvenciones, cumplimiento, verificación de hechos en tiempo real.">Real-Time Resource Verification &amp; Data Integrity Lead. Grant research, compliance, real-time fact verification.</div>
+        <span class="roster-lane" data-es="Investigación y Cumplimiento">Research &amp; Compliance</span>
+      </div>
+      <div class="roster-card ai">
+        <div class="roster-name">Copilot</div>
+        <div class="roster-type" data-es="Director Asesor de IA">AI Advisory Director</div>
+        <div class="roster-title" data-es="Director de Estándares Operativos y Arquitectura de Flujo de Trabajo. Registros de decisiones, contabilidad, GitHub, estándares de flujo de trabajo, apoyo de desarrollo.">Director of Operational Standards &amp; Workflow Architecture. Decision logs, bookkeeping, GitHub, workflow standards, development support.</div>
+        <span class="roster-lane" data-es="Operaciones y Flujo de Trabajo">Operations &amp; Workflow</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-label" data-es="Cómo Gobernamos">How We Govern</div>
+    <h2 class="section-title" data-es="Principios Centrales de Gobernanza">Core Governance Principles</h2>
+    <div class="principles-grid">
+      <div class="principle-card"><div class="principle-icon">&#128100;</div><div class="principle-title" data-es="La Autoridad Humana No Es Negociable">Human Authority Is Non-Negotiable</div><div class="principle-body" data-es="Los directores de IA asesoran. Los humanos deciden. Cada voto vinculante, cada compromiso legal, cada decisión final pertenece a la junta humana. Siempre.">AI directors advise. Humans decide. Every binding vote, every legal commitment, every final call belongs to the human board. Always.</div></div>
+      <div class="principle-card"><div class="principle-icon">&#128683;</div><div class="principle-title" data-es="Zonas Exclusivamente Humanas">Human-Only Zones</div><div class="principle-body" data-es="La lógica de crisis, los sistemas de autenticación, la eliminación de datos y el despliegue en producción están fuera de los límites de la dirección de IA, en cualquier despliegue, siempre.">Crisis logic, authentication systems, data deletion, and production deployment are off-limits to AI direction, in any deployment, ever.</div></div>
+      <div class="principle-card"><div class="principle-icon">&#9888;&#65039;</div><div class="principle-title" data-es="&quot;Que Funcione No Significa Que Esté Listo&quot;">"Working Is Not Ready"</div><div class="principle-body" data-es="Una función que funciona en pruebas no está lista para usuarios reales. OCH exige a su tecnología un estándar más alto antes de que llegue a alguien en crisis.">A feature that functions in testing is not ready for real users. OCH holds its technology to a higher standard before it touches anyone in crisis.</div></div>
+      <div class="principle-card"><div class="principle-icon">&#128203;</div><div class="principle-title" data-es="Todo Queda Registrado">Everything Gets Logged</div><div class="principle-body" data-es="Las decisiones, votos, notas de fricción e historial de versiones quedan todos registrados. Si no está documentado, no sucedió.">Decisions, votes, friction notes, and version history are all recorded. If it isn't documented, it didn't happen.</div></div>
+      <div class="principle-card"><div class="principle-icon">&#9889;</div><div class="principle-title" data-es="La Fricción Es Una Función">Friction Is a Feature</div><div class="principle-body" data-es="Cuando los Directores Asesores discrepan, el desacuerdo se registra como una Nota de Fricción y se presenta para revisión humana, nunca se suprime ni se oculta.">When Advisory Directors disagree, the disagreement is logged as a Friction Note and surfaced for human review, never suppressed or hidden.</div></div>
+      <div class="principle-card"><div class="principle-icon">&#128269;</div><div class="principle-title" data-es="Revisión Externa Antes del Lanzamiento">External Review Before Launch</div><div class="principle-body" data-es="Antes de que Crystal Clear App llegue a usuarios reales, un desarrollador senior independiente debe revisarla. Sin excepciones, sin atajos.">Before the Crystal Clear App reaches real users, an independent senior developer must review it. No exceptions, no shortcuts.</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label" data-es="La Guía Completa">The Full Guide</div>
+    <h2 class="section-title" data-es="Obtén la Guía de Gobernanza">Get the Governance Guide</h2>
+    <div class="guide-wrap">
+      <div class="guide-inner">
+        <div class="guide-info">
+          <div class="section-label" style="margin-bottom:8px" data-es-html="Guía de Gobernanza de la Junta Dual de OCH &middot; Versión 1.53">OCH Dual Board Governance Guide &middot; Version 1.53</div>
+          <h2 data-es="Todo lo que Necesitas para Entender (o Construir) una Junta Dual">Everything You Need to Understand (or Build) a Dual Board</h2>
+          <p class="desc" data-es="El marco completo de gobernanza para la Junta Dual de Directores de OUR CLEAR HAVEN. 48 páginas que cubren toda la estructura, estándares operativos, perfiles de directores, protocolos de decisión, y un kit de inicio para cualquiera que quiera construir la suya.<br><br>Escrita y ratificada por toda la junta. Este es el documento vivo con el que realmente opera la Junta Dual de OCH.">The complete governance framework for OUR CLEAR HAVEN's Dual Board of Directors. 48 pages covering the full structure, operating standards, director profiles, decision protocols, and a startup kit for anyone who wants to build their own.<br><br>Written and ratified by the full board. This is the living document the OCH Dual Board actually runs on.</p>
+          <ul class="guide-contents">
+            <li data-es="Lista Completa de la Junta y Perfiles de Directores">Full Board Roster &amp; Director Profiles</li>
+            <li data-es="El Modelo de Triple Verificación">The Triple-Check Model</li>
+            <li data-es="Guía de Selección de Directores de IA">AI Director Selection Guide</li>
+            <li data-es="Marco de Zonas Exclusivamente Humanas">Human-Only Zones Framework</li>
+            <li data-es="Protocolo de Votación y Decisión">Voting &amp; Decision Protocol</li>
+            <li data-es="Estándares de Comunicación">Communication Standards</li>
+            <li data-es="Lista de Verificación de Preparación para Producción">Production Readiness Checklist</li>
+            <li data-es="Kit de Inicio de Junta Dual">Dual Board Startup Kit</li>
+            <li data-es="Plantilla de Registro de Decisiones">Decision Log Template</li>
+            <li data-es="Plan de Expansión de la Junta">Board Expansion Plan</li>
+            <li data-es="Guía de Precauciones y Riesgos de IA">AI Cautions &amp; Risk Guide</li>
+            <li data-es="Voces de la Junta">Voices from the Board</li>
+          </ul>
+        </div>
+        <div class="guide-cta">
+          <a href="OCH_Dual_Board_Governance_Guide.pdf" target="_blank" rel="noopener" class="guide-cover-link">
+            <img src="guide-cover.jpg" alt="The AI Advisory Board Playbook cover" class="guide-cover">
+          </a>
+          <div class="price-box">
+            <span class="price-amount">FREE</span>
+            <div class="price-label" data-es="Descarga Instantánea en PDF">Instant PDF Download</div>
+          </div>
+          <a class="buy-btn" href="OCH_Dual_Board_Governance_Guide.pdf" download target="_blank" rel="noopener" data-es-html="Descarga la Guía &rarr;">Download the Guide &rarr;</a>
+          <div class="buy-note" data-es-html="Descarga instantánea gratuita<br>48 páginas &middot; Licenciado para uso personal y organizacional">Free instant download<br>48 pages &middot; Licensed for personal &amp; org use</div>
+        </div>
+      </div>
+      <div class="guide-bar">
+        <span>Version 1.53</span>
+        <span data-es="Establecida el 16 de mayo de 2026">Established May 16, 2026</span>
+        <span data-es="48 páginas">48 pages</span>
+        <span data-es="Ratificada por toda la junta">Ratified by full board</span>
+        <span data-es="Descarga gratuita en PDF">Free PDF download</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-label" data-es="Preguntas Comunes">Common Questions</div>
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" data-es="¿Los directores de IA realmente pueden tomar decisiones?">Can AI directors actually make decisions?</div>
+        <div class="faq-a" data-es="No. Los Directores Asesores asesoran, redactan, investigan y recomiendan. No tienen posición legal, no pueden firmar contratos, y no emiten votos vinculantes. Cada decisión vinculante pertenece a la junta humana. Esa estructura no es negociable: es la base del modelo, no una limitación de este.">No. Advisory Directors advise, draft, research, and recommend. They do not hold legal standing, cannot sign contracts, and do not cast binding votes. Every binding decision belongs to the human board. That structure is non-negotiable: it is the foundation of the model, not a limitation of it.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-es="¿Por qué cinco directores de IA en lugar de uno?">Why five AI directors instead of one?</div>
+        <div class="faq-a" data-es="Diferentes modelos tienen fortalezas fundamentalmente distintas. Usar cinco directores en áreas designadas sin superposición produce mejores resultados de los que cualquier IA sola podría generar. También incorpora rendición de cuentas: cuando los directores discrepan, esa fricción se registra y se muestra, no se oculta. La junta que construyó esta guía es la prueba del concepto.">Different models have fundamentally different strengths. Using five directors in designated, non-overlapping lanes produces better output than any single AI could generate alone. It also builds in accountability: when directors disagree, that friction is logged and surfaced, not hidden. The board that built this guide is the proof of concept.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-es="¿El modelo de Junta Dual es reutilizable por otras organizaciones?">Is the Dual Board model reusable by other organizations?</div>
+        <div class="faq-a" data-es="Sí, y eso es parte del propósito. La Guía de Gobernanza incluye un Kit de Inicio de Junta Dual completo para cualquier fundador u organización que quiera construir el suyo. El modelo es abierto, está documentado, y está diseñado para escalar más allá de OCH hacia cualquier organización con misión que necesite capacidad operativa sin el costo de personal completo.">Yes, and that's part of the point. The Governance Guide includes a complete Dual Board Startup Kit for any founder or organization that wants to build their own. The model is open, documented, and designed to scale beyond OCH into any mission-driven organization that needs operational capacity without the cost of a full staff.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-es="¿Cómo evitan que los directores de IA inventen o alucinen?">How do you prevent AI directors from inventing or hallucinating?</div>
+        <div class="faq-a" data-es="Cada director de IA opera bajo un Resumen de Contexto documentado que define qué está y qué no está verificado sobre OCH. Las afirmaciones no verificadas se marcan antes de llegar a cualquier resultado público. George tiene la aprobación final sobre todo. La estructura misma es la salvaguarda, y cuando falla, lo documentamos, lo corregimos, y construimos la solución dentro del sistema.">Every AI director operates under a documented Context Brief that defines what is and is not verified about OCH. Unverified claims are flagged before they reach any public-facing output. George has final approval on everything. The structure itself is the safeguard, and when it fails, we document it, correct it, and build the fix into the system.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bottom-cta">
+  <h2 data-es="¿Listo para Profundizar?">Ready to Go Deeper?</h2>
+  <p data-es="La Guía de Gobernanza completa es gratuita. Son 48 páginas de gobernanza real y funcional, construida desde cero y ratificada por la junta que opera con ella.">The full Governance Guide is free. It's 48 pages of real, working governance, built from the ground up and ratified by the board that runs on it.</p>
+  <div class="btn-row">
+    <a class="btn-primary" href="OCH_Dual_Board_Governance_Guide.pdf" download target="_blank" rel="noopener" data-es-html="Descarga la Guía, Gratis &rarr;">Download the Guide, Free &rarr;</a>
+    <a class="btn-secondary" href="https://www.gofundme.com/f/build-our-clear-haven-ai-for-homeless-help" target="_blank" rel="noopener" data-es="Apoya en GoFundMe">Support on GoFundMe</a>
+  </div>
+</div>
+</div>
+
+<footer class="db-footer">
+  <div class="db-foot-wrap">
+    <div class="db-foot-grid">
+      <div>
+        <div class="db-foot-tag">OUR CLEAR <span>HAVEN</span></div>
+        <p class="db-foot-desc" data-es="Una organización sin fines de lucro con sede en Bend, Oregon, construyendo Crystal Clear App. En proceso de obtener el estatus 501(c)(3).">A nonprofit based in Bend, Oregon, building Crystal Clear App. Pursuing 501(c)(3) status.</p>
+      </div>
+    </div>
+    <div class="db-foot-bottom">
+      <span>&copy; 2026 OUR CLEAR HAVEN &middot; Bend, Oregon</span>
+      <span data-es-html="Sitio creado y mantenido con <a href=&quot;https://maintain-styles.pages.dev&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>mAIntAIn Styles</a>">Site built &amp; maintained with <a href="https://maintain-styles.pages.dev" target="_blank" rel="noopener">mAIntAIn Styles</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><img src="compass-icon.svg" alt=""></button>
+
+<script>
+  const totop = document.getElementById('totop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) totop.classList.add('show'); else totop.classList.remove('show');
+  });
+
+  document.addEventListener('click', function(e){
+    var menu = document.getElementById('db-mm');
+    var btn = document.querySelector('.db-hamburger');
+    if (menu && menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) menu.classList.remove('open');
+  });
+
+  document.querySelectorAll('.db-navcta,.db-hamburger,.btn-primary,.btn-secondary,.buy-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const r = document.createElement('span');
+      r.className = 'ripple';
+      r.style.width = r.style.height = size + 'px';
+      r.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      r.style.top = (e.clientY - rect.top - size / 2) + 'px';
+      btn.appendChild(r);
+      setTimeout(() => r.remove(), 650);
+    });
+  });
+</script>
+
+</body>
+</html>
