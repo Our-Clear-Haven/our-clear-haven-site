@@ -35,6 +35,10 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:8
 .mobile-menu a.active{color:var(--gold);background:rgba(248,214,97,.1)}
 .mobile-menu .navcta{margin-top:8px;justify-content:center;text-align:center}
 .mobile-menu a.navcta:hover{background:#1a5c30;color:var(--cream)}
+@media(max-width:680px){
+  nav .wrap>.navcta{display:none}
+}
+
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:ripple-anim .6s ease-out forwards;pointer-events:none}
 @keyframes ripple-anim{to{transform:scale(3);opacity:0}}
 
