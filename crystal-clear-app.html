@@ -19,8 +19,8 @@
 <script src="lang-toggle.js" defer></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:#18182c;font-family:'Kanit',sans-serif}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:#18182c;font-family:'Kanit',sans-serif;overflow-x:hidden}
 a{color:inherit}
 img{max-width:100%;display:block}
 
@@ -47,6 +47,13 @@ img{max-width:100%;display:block}
 .cca-mobile-menu a.active{color:var(--teal);background:rgba(64,235,240,.1)}
 .cca-mobile-menu .cca-navcta{margin-top:8px;justify-content:center;text-align:center}
 .cca-mobile-menu a.cca-navcta:hover{background:var(--teal);color:var(--bg-dark)}
+@media(max-width:680px){
+  .cca-nav-wrap>.cca-navcta{display:none}
+}
+@media(max-width:480px){
+  .cca-nav-logo img{height:52px!important}
+}
+
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:ripple-anim .6s ease-out forwards;pointer-events:none}
 @keyframes ripple-anim{to{transform:scale(3);opacity:0}}
 

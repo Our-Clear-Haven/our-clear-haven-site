@@ -48,6 +48,13 @@ img{max-width:100%;display:block}
 .db-mobile-menu a.active{color:var(--gold);background:rgba(212,168,67,.12)}
 .db-mobile-menu .db-navcta{margin-top:8px;justify-content:center;text-align:center}
 .db-mobile-menu a.db-navcta:hover{background:var(--gold);color:var(--bg)}
+@media(max-width:680px){
+  .db-nav-wrap>.db-navcta{display:none}
+}
+@media(max-width:480px){
+  .db-nav-logo img{height:52px!important}
+}
+
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:ripple-anim .6s ease-out forwards;pointer-events:none}
 @keyframes ripple-anim{to{transform:scale(3);opacity:0}}
 
