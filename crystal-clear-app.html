@@ -34,6 +34,7 @@ img{max-width:100%;display:block}
 .cca-nav{position:sticky;top:0;z-index:50;background:rgba(17,17,34,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--teal-border)}
 .cca-nav-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:112px;position:relative}
 .cca-nav-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;font-family:'Poppins',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.06em;text-decoration:none;color:#fff}
+.cca-nav-logo img{max-width:none}
 .cca-nav-logo span{color:var(--teal)}
 .cca-navlinks{display:none}
 .cca-navlinks a{text-decoration:none;color:var(--text-muted);transition:color .2s;text-transform:uppercase;letter-spacing:.02em}
@@ -51,7 +52,8 @@ img{max-width:100%;display:block}
   .cca-nav-wrap>.cca-navcta{display:none}
 }
 @media(max-width:480px){
-  .cca-nav-logo img{height:58px!important}
+  .cca-nav-logo{left:80px!important;transform:translateY(-50%)!important}
+  .cca-nav-logo img{height:clamp(52px, 16.9vw, 72px)!important;max-width:none!important}
 }
 
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:ripple-anim .6s ease-out forwards;pointer-events:none}

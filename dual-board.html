@@ -36,6 +36,7 @@ img{max-width:100%;display:block}
 .db-nav-wrap{max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:112px;position:relative}
 .logo-text{font-family:'Ultra',serif;font-weight:400;letter-spacing:-0.01em}
 .db-nav-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;font-family:'Kanit',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;text-decoration:none;color:var(--text)}
+.db-nav-logo img{max-width:none}
 .db-nav-logo span{color:var(--gold)}
 .db-navlinks{display:none}
 .db-navlinks a{text-decoration:none;color:var(--muted);transition:color .2s;text-transform:uppercase;letter-spacing:.02em}
@@ -53,7 +54,8 @@ img{max-width:100%;display:block}
   .db-nav-wrap>.db-navcta{display:none}
 }
 @media(max-width:480px){
-  .db-nav-logo img{height:58px!important}
+  .db-nav-logo{left:80px!important;transform:translateY(-50%)!important}
+  .db-nav-logo img{height:clamp(52px, 16.9vw, 72px)!important;max-width:none!important}
 }
 
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:ripple-anim .6s ease-out forwards;pointer-events:none}

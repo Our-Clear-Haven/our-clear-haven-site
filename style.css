@@ -22,9 +22,10 @@ img{max-width:100%;display:block}
 nav{position:sticky;top:0;z-index:50;background:rgba(9,41,71,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:112px;position:relative}
 .nav-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1}
-.nav-logo img{height:92px;width:auto}
+.nav-logo img{height:92px;width:auto;max-width:none}
 @media(max-width:480px){
-  .nav-logo img{height:58px}
+  .nav-logo{left:80px;transform:translateY(-50%)}
+  .nav-logo img{height:clamp(52px, 16.9vw, 72px)}
 }
 
 .navlinks{display:none}
