@@ -44,6 +44,32 @@
   }
 }
 </script>
+<style>
+.home-crisis-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;background:rgba(240,80,80,.12);border:1px solid rgba(240,80,80,.35);border-radius:14px;padding:14px 20px;margin:26px 0}
+.home-crisis-item{display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--cream)}
+.home-crisis-item a{color:#f08080;font-weight:800;font-size:15px;text-decoration:none}
+.home-crisis-item a:hover{text-decoration:underline}
+.home-crisis-item span{color:var(--cream-dim)}
+.home-res-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.home-res-pill{border:1px solid;border-radius:100px;padding:6px 14px;font-size:12.5px;font-weight:600;text-decoration:none;white-space:nowrap}
+.home-res-count{margin-top:18px;font-size:13.5px;color:var(--cream-dim)}
+.home-res-count b{color:var(--gold)}
+.gi-preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:52px}
+.gi-preview-card{background:#0c3355;border:2px solid #1a5c30;border-radius:14px;padding:22px 20px;box-shadow:0 4px 8px rgba(0,0,0,0.3),0 14px 28px rgba(0,0,0,0.35);display:flex;flex-direction:column;gap:10px}
+.gi-preview-card h4{font-size:15px;font-weight:600}
+.gi-preview-card p{font-size:13.5px;color:var(--cream-dim);flex:1}
+.gi-preview-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.gi-preview-btn{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:100px;font-size:12.5px;font-weight:700;text-decoration:none;border:1px solid transparent}
+.gi-preview-btn.give{background:rgba(240,192,64,.16);color:#F0C040;border-color:rgba(240,192,64,.35)}
+.gi-preview-btn.give:hover{background:rgba(240,192,64,.28)}
+.gi-preview-btn.vol{background:rgba(109,204,150,.14);color:#6dcc96;border-color:rgba(109,204,150,.32)}
+.gi-preview-btn.vol:hover{background:rgba(109,204,150,.26)}
+.founder-stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+.founder-stat-chip{background:rgba(248,214,97,0.1);border:1px solid rgba(248,214,97,0.3);border-radius:100px;padding:9px 18px;font-size:13.5px;font-weight:700;color:var(--gold)}
+.founder-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:52px}
+@media(max-width:900px){.founder-feature-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.gi-preview-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
@@ -104,6 +130,35 @@
 <div class="oregon-banner">
   <h2 data-es="Llegando a Oregon — 2027">Coming to Oregon &mdash; 2027</h2>
 </div>
+
+<section id="home-resources">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin:0 auto;max-width:none">
+      <div class="eyebrow" data-es="&#191;Necesitas ayuda ahora mismo?">Need help right now?</div>
+      <h2 style="margin:0 auto;max-width:26ch" data-es-html="Recursos locales reales y verificados. <span class=&quot;accent&quot;>Sin inicio de sesión. Sin puerta equivocada.</span>">Real, verified local resources. <span class="accent">No login. No wrong door.</span></h2>
+      <div class="home-crisis-bar reveal">
+        <div class="home-crisis-item"><a href="tel:988">988</a><span data-es="Crisis de Salud Mental">Mental Health Crisis</span></div>
+        <div class="home-crisis-item"><a href="tel:911">911</a><span data-es="Emergencia de Vida">Life Emergency</span></div>
+        <div class="home-crisis-item"><a href="tel:211">211</a><span data-es-html="Todas las Necesidades &middot; 24/7">All Needs &middot; 24/7</span></div>
+        <div class="home-crisis-item"><a href="tel:5413897021">541-389-7021</a><span data-es="Violencia Doméstica">Domestic Violence</span></div>
+      </div>
+      <p style="max-width:60ch;margin:0 auto" data-es="Este es el mismo Resource Vault que vive dentro de Crystal Clear App: 29 recursos verificados en el Centro de Oregon, con dirección, teléfono y horario, listos para usarse de inmediato.">This is the same Resource Vault that lives inside Crystal Clear App: 29 verified Central Oregon resources, with address, phone, and hours, ready to use right now.</p>
+      <div class="home-res-pills" style="justify-content:center">
+        <a class="home-res-pill" href="resources.html" style="color:#7ab5e8;border-color:#7ab5e8" data-es="Refugio de Emergencia (6)">Emergency Shelter (6)</a>
+        <a class="home-res-pill" href="resources.html" style="color:#6dcc96;border-color:#6dcc96" data-es="Alimentos (4)">Food (4)</a>
+        <a class="home-res-pill" href="resources.html" style="color:#5dd6ce;border-color:#5dd6ce" data-es="Salud (5)">Healthcare (5)</a>
+        <a class="home-res-pill" href="resources.html" style="color:#f08080;border-color:#f08080" data-es="Apoyo en Crisis (3)">Crisis Support (3)</a>
+        <a class="home-res-pill" href="resources.html" style="color:#e8a07a;border-color:#e8a07a" data-es="Asistencia Legal (2)">Legal Aid (2)</a>
+        <a class="home-res-pill" href="resources.html" style="color:#c4a8f0;border-color:#c4a8f0" data-es="Vivienda y Servicios (2)">Housing &amp; Utilities (2)</a>
+        <a class="home-res-pill" href="resources.html" style="color:#d4a82a;border-color:#d4a82a" data-es="Empleo (2)">Employment (2)</a>
+        <a class="home-res-pill" href="resources.html" style="color:#b09de0;border-color:#b09de0" data-es="Veteranos (2)">Veterans (2)</a>
+      </div>
+      <div class="hero-ctas" style="justify-content:center;margin-top:28px">
+        <a class="btn btn-primary" href="resources.html" data-es-html="Explora todos los recursos <span class=&quot;arrow&quot;>&rarr;</span>">Browse all resources <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="sec-panel">
   <div class="wrap">
@@ -188,6 +243,64 @@
       <div class="board-card"><div class="board-avatar">H</div><h3>Hermes</h3><p data-es="Independencia de proveedores">Vendor independence</p></div>
       <div class="board-card"><div class="board-avatar">P</div><h3>Perplexity</h3><p data-es="Verificación de recursos">Resource verification</p></div>
       <div class="board-card"><div class="board-avatar">C</div><h3>Copilot</h3><p data-es="Estándares operativos">Operational standards</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-panel">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-es="Dona tu tiempo o tu dinero">Give your time or your dollars</div>
+      <h2 data-es-html="Ayuda a quienes ya hacen <span class=&quot;accent&quot;>este trabajo</span>.">Help the people already doing <span class="accent">this work</span>.</h2>
+      <p data-es="Cada organización de abajo ya aparece en nuestro Resource Vault, y cada una necesita más manos y más fondos de los que tiene.">Every organization below is already in our Resource Vault, and every one of them needs more hands and more funding than they have.</p>
+    </div>
+    <div class="gi-preview-grid reveal">
+      <div class="gi-preview-card">
+        <h4>Shepherd's House Ministries</h4>
+        <p data-es="Refugio de bajo umbral con comidas, lavandería, duchas y manejo de casos — también opera el Lighthouse Navigation Center.">Low-barrier shelter with meals, laundry, showers, and case management &mdash; runs Lighthouse Navigation Center too.</p>
+        <div class="gi-preview-actions">
+          <a class="gi-preview-btn give" href="https://www.shepherdshouseministries.org/donate" target="_blank" rel="noopener" data-es-html="&#9679; Donar">&#9679; Donate</a>
+          <a class="gi-preview-btn vol" href="https://shepherdshouseministries.org/volunteer/" target="_blank" rel="noopener" data-es-html="&#9679; Voluntariado">&#9679; Volunteer</a>
+        </div>
+      </div>
+      <div class="gi-preview-card">
+        <h4>NeighborImpact</h4>
+        <p data-es="Opera el Franklin Avenue Shelter, el Stepping Stone Shelter, la despensa regional de alimentos y asistencia con servicios públicos, todo en una sola organización.">Runs Franklin Avenue Shelter, Stepping Stone Shelter, the regional food pantry, and utility assistance in one org.</p>
+        <div class="gi-preview-actions">
+          <a class="gi-preview-btn give" href="https://www.neighborimpact.org/give-help/donate/" target="_blank" rel="noopener" data-es-html="&#9679; Donar">&#9679; Donate</a>
+          <a class="gi-preview-btn vol" href="https://www.neighborimpact.org/volunteering/" target="_blank" rel="noopener" data-es-html="&#9679; Voluntariado">&#9679; Volunteer</a>
+        </div>
+      </div>
+      <div class="gi-preview-card">
+        <h4>Saving Grace, DV Services</h4>
+        <p data-es="Refugio de emergencia y defensoría para sobrevivientes de violencia doméstica y agresión.">Emergency shelter and advocacy for domestic violence and assault survivors.</p>
+        <div class="gi-preview-actions">
+          <a class="gi-preview-btn give" href="https://secure.givelively.org/donate/saving-grace-bend-or" target="_blank" rel="noopener" data-es-html="&#9679; Donar">&#9679; Donate</a>
+          <a class="gi-preview-btn vol" href="https://www.saving-grace.org/volunteer" target="_blank" rel="noopener" data-es-html="&#9679; Voluntariado">&#9679; Volunteer</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-ctas" style="margin-top:32px">
+      <a class="btn btn-ghost" href="get-involved.html" data-es-html="Ve todas las formas de participar <span class=&quot;arrow&quot;>&rarr;</span>">See all ways to get involved <span class="arrow">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin:0 auto 40px;max-width:none">
+      <div class="eyebrow" data-es="Programa de Miembros Fundadores">Founding Member Program</div>
+      <h2 style="margin:0 auto;max-width:22ch" data-es-html="Sé uno de los primeros 1,000 <span class=&quot;accent&quot;>Grande Grand Founders</span>.">Become one of the first 1,000 <span class="accent">Grande Grand Founders</span>.</h2>
+      <p style="margin:14px auto 0;max-width:56ch" data-es="Los primeros 1,000 en apoyar con $100 o más se convierten en parte permanente de la historia de Our Clear Haven.">The first 1,000 to support with $100 or more become a permanent part of Our Clear Haven's history.</p>
+      <div class="founder-stats" style="justify-content:center">
+        <span class="founder-stat-chip" data-es="1,000 Lugares de Fundador">1,000 Founding Spots</span>
+        <span class="founder-stat-chip" data-es="Nivel de $100+">$100+ Level</span>
+      </div>
+    </div>
+    <div class="founder-feature-grid reveal">
+      <div class="fcard"><h4 data-es-html="&#127941; Reconocimiento Permanente">&#127941; Permanent Recognition</h4><p data-es="Tu nombre puede aparecer listado en la app como Grande Grand Founder. Opcional.">Your name can be listed in the app as a Grande Grand Founder. Optional.</p></div>
+      <div class="fcard"><h4 data-es-html="&#9889; Acceso Anticipado">&#9889; Early Access</h4><p data-es="Sé de los primeros en probar nuevas funciones de Crystal Clear App antes del lanzamiento público.">Be among the first to test new Crystal Clear App features before public release.</p></div>
+      <div class="fcard"><h4 data-es-html="&#129309; Comunidad Exclusiva">&#129309; Exclusive Community</h4><p data-es="Acceso a un espacio privado donde los Fundadores conectan y siguen el camino de cerca.">Access to a private space where Founders connect and follow the journey up close.</p></div>
     </div>
   </div>
 </section>
