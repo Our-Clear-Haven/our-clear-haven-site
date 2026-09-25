@@ -145,12 +145,14 @@ img{max-width:100%;display:block}
 .demo-frame{margin:40px auto 0;width:460px;max-width:100%}
 .demo-frame iframe{width:100%;height:680px;border:none;display:block;background:transparent}
 
-.cca-footer{background:var(--bg-dark);border-top:1px solid var(--teal-border);padding:56px 24px 36px}
+.cca-footer{background:var(--bg-dark);border-top:1px solid var(--teal-border);padding:56px 24px 40px;text-align:center}
 .cca-foot-wrap{max-width:1140px;margin:0 auto}
-.cca-foot-grid{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px}
-.cca-foot-tag{font-family:'Poppins',sans-serif;font-weight:900;font-size:14px;color:#fff;margin-bottom:8px}
+.cca-foot-tag{font-family:'Poppins',sans-serif;font-weight:900;font-size:22px;color:#fff}
 .cca-foot-tag span{color:var(--teal)}
-.cca-foot-desc{font-size:14px;color:var(--text-muted);max-width:32ch}
+.cca-foot-social{display:flex;align-items:center;justify-content:center;gap:12px;font-size:14px;color:var(--text-muted);margin-bottom:8px}
+.cca-foot-social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--teal-border);color:var(--text-muted);flex:none;transition:border-color .2s ease,color .2s ease}
+.cca-foot-social a:hover{border-color:var(--teal);color:var(--teal)}
+.cca-foot-social a svg{width:16px;height:16px}
 .cca-foot-links{display:flex;gap:24px;font-size:14px;flex-wrap:wrap}
 .cca-foot-links a{text-decoration:none;color:var(--text-muted);text-transform:uppercase;letter-spacing:.02em}
 .cca-foot-bottom{margin-top:36px;padding-top:22px;border-top:1px solid var(--teal-border);display:flex;flex-direction:column;align-items:center;text-align:center;font-size:13px;color:var(--text-muted);gap:6px}
@@ -365,11 +367,10 @@ img{max-width:100%;display:block}
 
 <footer class="cca-footer">
   <div class="cca-foot-wrap">
-    <div class="cca-foot-grid">
-      <div>
-        <div class="cca-foot-tag">OUR CLEAR <span>HAVEN</span></div>
-        <p class="cca-foot-desc" data-es="Una organización sin fines de lucro con sede en Bend, Oregon, construyendo Crystal Clear App. En proceso de obtener el estatus 501(c)(3).">A nonprofit based in Bend, Oregon, building Crystal Clear App. Pursuing 501(c)(3) status.</p>
-      </div>
+    <div class="cca-foot-tag" style="margin:0 auto 22px">OUR CLEAR <span>HAVEN</span></div>
+    <div class="cca-foot-social">
+      <a href="https://x.com/ourclearhaven" target="_blank" rel="noopener" aria-label="Our Clear Haven on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.4l8.1-9.3L1 2h7.2l5 6.6L18.9 2zm-1.2 18h1.7L7.4 4H5.6l12.1 16z"/></svg></a>
+      <span data-es="Sigue el camino &mdash; @ourclearhaven">Follow the journey &mdash; @ourclearhaven</span>
     </div>
     <div class="cca-foot-bottom">
       <span>&copy; 2026 <span class="logo-text">Our Clear Haven</span> &middot; Bend, Oregon</span>
