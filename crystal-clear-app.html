@@ -113,6 +113,7 @@ img{max-width:100%;display:block}
 .cca-quote{padding:18px 22px;border-left:3px solid var(--teal);background:rgba(64,235,240,0.05);border-radius:0 12px 12px 0;font-style:italic;color:var(--text-muted);font-size:1.03rem;line-height:1.6}
 
 .cca-features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:48px}
+.cca-features-grid>.cca-card:last-child:nth-child(odd){grid-column:1/-1}
 .cca-card{background:var(--bg);border:1px solid var(--teal-border);border-radius:var(--radius);padding:28px;transition:transform .2s,border-color .2s,box-shadow .2s}
 .cca-card:hover{transform:translateY(-4px);border-color:var(--teal);box-shadow:0 8px 36px rgba(64,235,240,0.1)}
 .cca-card-icon{font-size:1.8rem;margin-bottom:12px}
@@ -306,7 +307,6 @@ img{max-width:100%;display:block}
       <div class="cca-bar"></div>
       <div class="cca-features-grid">
         <div class="cca-card"><div class="cca-card-icon">&#9881;&#65039;</div><h3 data-es="Menú Totalmente Personalizable">Fully Customizable Menu</h3><p data-es="Reordena secciones, oculta lo que no sea relevante, y guarda múltiples diseños a medida que tu situación cambia. La app se adapta a cada persona.">Reorder sections, hide what's irrelevant, and save multiple layouts as your situation changes. The app adapts to each person.</p></div>
-        <div class="cca-card"><div class="cca-card-icon">&#128062;</div><h3 data-es="Mascotas y Familias Bienvenidas">Pets &amp; Families Welcome</h3><p data-es="Filtros fáciles para servicios que aceptan mascotas, animales de apoyo emocional y familias, porque nadie debería tener que elegir entre recibir ayuda y mantener a su familia unida.">Easy filters for pet-friendly, ESA-approved, and family-friendly services, because no one should have to choose between getting help and keeping their family together.</p></div>
         <div class="cca-card"><div class="cca-card-icon">&#128188;</div><h3 data-es="Empleos y Asistencia Legal">Jobs &amp; Legal Aid</h3><p data-es="Listados de empleo de bajo umbral y recursos de defensa contra desalojos con apoyo guiado paso a paso de Crystal.">Low-barrier job listings and eviction defense resources with guided step-by-step support from Crystal.</p></div>
         <div class="cca-card"><div class="cca-card-icon">&#128221;</div><h3 data-es="Formularios Guiados">Guided Forms</h3><p data-es="Ayuda paso a paso de Crystal con solicitudes y trámites, un campo a la vez.">Step-by-step help from Crystal with applications and paperwork, one field at a time.</p></div>
       </div>
