@@ -200,6 +200,8 @@ footer{padding:8px 0 40px;background:var(--bg-black);text-align:center}
 .foot-social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);color:var(--cream-dim);flex:none;transition:border-color .2s ease,color .2s ease}
 .foot-social a:hover{border-color:var(--orange);color:var(--orange)}
 .foot-social a svg{width:16px;height:16px}
+.foot-email{color:var(--gold);font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;margin:18px 0}
+.foot-email svg{width:18px;height:18px;flex-shrink:0}
 .foot-links{display:flex;gap:28px;font-size:14px;flex-wrap:wrap}
 .foot-links a{text-decoration:none;color:var(--cream-dim);text-transform:uppercase;letter-spacing:.02em;display:inline-flex;align-items:center;min-height:48px}
 .foot-bottom{margin-top:36px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:center;text-align:center;font-size:13px;color:var(--cream-dim);gap:6px}
