@@ -75,12 +75,26 @@ img{max-width:100%;display:block}
 @media(max-width:900px){.lang-toggle{top:120px;right:16px}}
 
 #ochdual{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
-.hero{text-align:center;padding:72px 24px 60px;background:linear-gradient(180deg,rgba(212,168,67,0.07) 0%,transparent 100%);border-bottom:1px solid var(--border)}
-.hero-tag{display:inline-block;font-size:0.67rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);background:rgba(212,168,67,0.1);border:1px solid var(--border2);border-radius:20px;padding:5px 16px;margin-bottom:22px}
-.hero h1{font-family:'Kanit',sans-serif;font-size:clamp(3rem,7.5vw,6rem);font-weight:700;color:var(--gold);line-height:1.08;margin-bottom:20px}
-.hero-sub{font-size:1.02rem;color:rgba(240,237,232,0.72);max-width:760px;margin:0 auto 36px;font-weight:300}
-.hero-quote{font-size:0.92rem;font-style:italic;color:rgba(240,237,232,0.52);max-width:540px;margin:0 auto;border-left:3px solid var(--gold);padding:10px 0 10px 18px;text-align:left;line-height:1.6}
+.hero{position:relative;padding:72px 24px 64px;background:linear-gradient(100deg,rgba(10,20,40,.92) 0%,rgba(10,20,40,.78) 46%,rgba(10,20,40,.42) 100%),radial-gradient(ellipse 720px 420px at 88% 18%,rgba(0,143,255,.30),transparent 72%),url('assets/hero-slide-3.jpg') center/cover no-repeat;border-bottom:1px solid var(--border)}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:center}
+.hero-tag{display:inline-block;font-size:0.67rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);background:rgba(212,168,67,0.1);border:1px solid var(--border2);border-radius:20px;padding:5px 16px;margin-bottom:18px}
+.hero h1{font-family:'Kanit',sans-serif;font-size:clamp(2.6rem,5.4vw,4.4rem);font-weight:700;color:var(--gold);line-height:1.05;margin-bottom:16px}
+.hero-sub{font-size:1.05rem;color:rgba(240,237,232,0.86);max-width:38rem;margin:0 0 20px;font-weight:400;line-height:1.55}
+.hero-quote{font-size:0.92rem;font-style:italic;color:rgba(240,237,232,0.78);max-width:38rem;margin:0 0 22px;background:rgba(8,16,32,.55);backdrop-filter:blur(8px);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:16px;padding:16px 18px;text-align:left;line-height:1.6}
 .hero-quote span{display:block;margin-top:10px;font-style:normal;color:var(--gold);font-size:0.78rem;font-weight:600;letter-spacing:0.5px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.hero-pills a{text-decoration:none;font-size:0.76rem;font-weight:700;letter-spacing:.03em;color:var(--gold);border:1px solid rgba(212,168,67,.5);border-radius:999px;padding:6px 12px;background:rgba(8,16,32,.35)}
+.hero-pills a:hover{background:rgba(212,168,67,.14)}
+.hero-record{font-size:0.88rem;color:rgba(240,237,232,.66);max-width:38rem;margin:0;line-height:1.55}
+.hero-guide{display:flex;flex-direction:column;align-items:center;gap:12px;text-decoration:none;background:rgba(8,16,32,.48);border:1px solid var(--border2);border-radius:18px;padding:22px 18px;backdrop-filter:blur(8px);box-shadow:0 18px 36px rgba(0,0,0,.28);transition:transform .25s}
+.hero-guide:hover{transform:translateY(-4px)}
+.hero-guide img{width:168px;border-radius:4px;box-shadow:0 16px 32px rgba(0,0,0,.45)}
+.hero-guide span{color:var(--gold);font-size:0.78rem;font-weight:700;letter-spacing:.04em}
+@media(max-width:800px){
+  .hero{background:linear-gradient(180deg,rgba(10,20,40,.84),rgba(10,20,40,.9)),radial-gradient(ellipse 420px 240px at 50% 0%,rgba(0,143,255,.28),transparent 70%),url('assets/hero-slide-3.jpg') center/cover no-repeat}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-guide{max-width:220px;margin:8px auto 0}
+}
 section{padding:80px 24px}
 #ochdual section.alt{background:rgba(0,0,0,0.25)}
 .container{max-width:1100px;margin:0 auto}
@@ -90,7 +104,8 @@ section{padding:80px 24px}
 .section-body p{margin-bottom:14px}
 .section-body strong{color:var(--text)}
 .stat-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:36px}
-.stat-card{flex:1;min-width:130px;background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--gold);border-radius:12px;padding:20px 16px;text-align:center}
+.stat-card{flex:1;min-width:130px;background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:16px;padding:22px 16px;text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
+.stat-card:hover{border-color:var(--border2);transform:translateY(-3px);box-shadow:0 16px 32px rgba(0,0,0,.32)}
 .stat-num{font-family:'Kanit',sans-serif;font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:7px}
 .stat-label{font-size:0.76rem;color:var(--muted);font-weight:500}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
@@ -113,9 +128,9 @@ section{padding:80px 24px}
 .tc-num{font-family:'Kanit',sans-serif;font-size:2rem;color:var(--gold);opacity:0.25;line-height:1;margin-bottom:6px}
 .tc-title{font-size:0.72rem;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
 .tc-body{font-size:0.85rem;color:rgba(240,237,232,0.72);line-height:1.6}
-.roster-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:36px}
-@media(min-width:760px){.roster-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1040px){.roster-grid{grid-template-columns:repeat(3,1fr)}}
+.roster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+@media(max-width:900px){.roster-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.roster-grid{grid-template-columns:1fr}}
 .roster-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px;transition:border-color .2s,transform .2s,box-shadow .2s}
 .roster-card:hover{border-color:var(--border2);transform:translateY(-3px);box-shadow:0 16px 32px rgba(0,0,0,.32)}
 .roster-card.human{border-top:3px solid var(--gold);background:linear-gradient(180deg,rgba(212,168,67,.10),var(--surface) 88px)}
@@ -126,9 +141,9 @@ section{padding:80px 24px}
 .roster-card.ai .roster-type{color:rgba(212,168,67,0.6)}
 .roster-title{font-size:0.83rem;color:rgba(240,237,232,0.68);line-height:1.5}
 .roster-lane{display:inline-block;margin-top:12px;font-size:0.68rem;background:rgba(212,168,67,0.08);border:1px solid rgba(212,168,67,0.2);border-radius:20px;padding:3px 10px;color:var(--gold);font-weight:600}
-.principles-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:36px}
-@media(min-width:760px){.principles-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1040px){.principles-grid{grid-template-columns:repeat(3,1fr)}}
+.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+@media(max-width:900px){.principles-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.principles-grid{grid-template-columns:1fr}}
 .principle-card{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:16px;padding:26px;transition:border-color .2s,transform .2s,box-shadow .2s}
 .principle-card:hover{border-color:var(--border2);transform:translateY(-3px);box-shadow:0 16px 32px rgba(0,0,0,.32)}
 .principle-icon{font-size:1.4rem;margin-bottom:12px}
@@ -162,16 +177,18 @@ section{padding:80px 24px}
 .faq-item:hover{border-color:var(--border2)}
 .faq-q{font-size:0.92rem;font-weight:700;color:var(--gold);margin-bottom:9px}
 .faq-a{font-size:0.86rem;color:rgba(240,237,232,0.72);line-height:1.65}
-.bottom-cta{text-align:center;padding:80px 24px 48px;background:var(--surface)}
-.bottom-cta h2{font-family:'Kanit',sans-serif;font-size:1.9rem;color:var(--gold);margin-bottom:12px}
-.bottom-cta p{color:rgba(240,237,232,0.6);font-size:0.92rem;margin-bottom:28px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.6}
+.bottom-cta{text-align:center;padding:80px 24px 72px;background:#f8f1e9;color:#0A1428}
+.bottom-cta h2{font-family:'Kanit',sans-serif;font-size:1.9rem;color:#a07e28;margin-bottom:12px}
+.bottom-cta p{color:rgba(10,20,40,0.78);font-size:0.95rem;margin-bottom:28px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.6}
+.bottom-cta .btn-secondary{color:#a07e28;border-color:rgba(160,126,40,.55)}
+.bottom-cta .btn-secondary:hover{border-color:#a07e28}
 .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .btn-primary{position:relative;overflow:hidden;background:var(--gold);color:var(--bg);font-weight:800;font-size:0.9rem;padding:13px 28px;border-radius:28px;text-decoration:none;transition:opacity .2s;letter-spacing:0.3px}
 .btn-secondary{position:relative;overflow:hidden;background:transparent;color:var(--gold);font-weight:700;font-size:0.9rem;padding:13px 28px;border-radius:28px;border:2px solid rgba(212,168,67,0.35);text-decoration:none;transition:border-color .2s}
 .btn-primary:hover{opacity:0.85}
 .btn-secondary:hover{border-color:var(--gold)}
 
-.db-logo-divider{background:radial-gradient(ellipse 1100px 380px at 50% -40px,rgba(var(--glow-rgb),.38) 0%,rgba(var(--glow-rgb),0) 75%) var(--surface);padding:54px 0 60px;text-align:center}
+.db-logo-divider{background:radial-gradient(ellipse 1100px 380px at 50% -40px,rgba(var(--glow-rgb),.38) 0%,rgba(var(--glow-rgb),0) 75%) var(--surface3);padding:54px 0 60px;text-align:center}
 .db-logo-divider img{width:280px;max-width:60vw;height:auto;margin:0 auto;display:block}
 .db-footer{background:var(--surface3);padding:8px 24px 40px;text-align:center}
 .db-foot-wrap{max-width:1100px;margin:0 auto}
@@ -223,12 +240,28 @@ section{padding:80px 24px}
 
 <div id="ochdual">
 <div class="hero">
-  <div class="hero-tag" data-es="Gobernanza y Liderazgo">Governance &amp; Leadership</div>
-  <h1 data-es-html="La Junta Dual<br>de Directores">The Dual Board<br>of Directors</h1>
-  <p class="hero-sub" data-es="Un nuevo tipo de modelo de gobernanza: visión y responsabilidad humanas, velocidad y apoyo de IA, trabajando juntos en colaboración estructurada.">A new kind of governance model: human vision and accountability, AI velocity and support, working together in structured collaboration.</p>
-  <div class="hero-quote" data-es-html="&quot;Un nuevo tipo de gobernanza. Visión humana, velocidad de IA, y el valor de construir algo que nunca ha existido antes.&quot; <span>— George Scharfetter, Fundador y Guardián de la Misión</span>">
-    "A new kind of governance. Human vision, AI velocity, and the courage to build something that has never existed before."
-    <span>&mdash; George Scharfetter, Founder &amp; Mission Steward</span>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-tag" data-es="Gobernanza y Liderazgo">Governance &amp; Leadership</div>
+      <h1 data-es-html="La Junta Dual<br>de Directores">The Dual Board<br>of Directors</h1>
+      <p class="hero-sub" data-es="Visión y responsabilidad humanas. Velocidad de IA en áreas fijas. Un Guardián decide.">Human vision and accountability. AI speed in fixed lanes. One Steward decides.</p>
+      <div class="hero-quote" data-es-html="&quot;Un nuevo tipo de gobernanza. Visión humana, velocidad de IA, y el valor de construir algo que nunca ha existido antes.&quot; <span>— George Scharfetter, Fundador y Guardián de la Misión</span>">
+        "A new kind of governance. Human vision, AI velocity, and the courage to build something that has never existed before."
+        <span>&mdash; George Scharfetter, Founder &amp; Mission Steward</span>
+      </div>
+      <div class="hero-pills">
+        <a href="#roster">Facts</a>
+        <a href="#roster">Integrity</a>
+        <a href="#roster">Voice</a>
+        <a href="#roster">Operations</a>
+        <a href="#roster">Resilience</a>
+      </div>
+      <p class="hero-record" data-es="La IA asesora en áreas fijas. El humano decide. El registro permanece visible.">AI advises in fixed lanes. The human decides. The record stays visible.</p>
+    </div>
+    <a class="hero-guide" href="assets/OCH_Dual_Board_Governance_Guide.pdf" target="_blank" rel="noopener">
+      <img src="assets/guide-cover.jpg" alt="OCH Dual Board Governance Guide cover">
+      <span data-es="v2.0.1 &middot; 52 páginas">v2.0.1 &middot; 52 pages</span>
+    </a>
   </div>
 </div>
 
@@ -287,7 +320,7 @@ section{padding:80px 24px}
   </div>
 </section>
 
-<section>
+<section id="roster">
   <div class="container">
     <div class="section-label" data-es="Lista Completa de la Junta">Full Board Roster</div>
     <h2 class="section-title" data-es="Conoce a la Junta">Meet the Board</h2>
